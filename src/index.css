@@ -5,5 +5,7 @@
 }
 
 * {
+    margin: 0;
     font-family: 'Anurati-Regular';
+    font-weight: lighter;
 }
