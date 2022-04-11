@@ -1,10 +1,9 @@
 import React from 'react';
 import './projects.scss';
 
-
 function Projects() {
   return (
-    <div>Projects</div>
+    <div className='Projects' id = "Projects"></div>
   )
 }
 

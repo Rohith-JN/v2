@@ -1,8 +1,17 @@
 .intro {
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 0px);
     background: #707070;
+    scroll-snap-align: start;
 
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+         }
+    }
     
     $t: 1s;
     $d: 0.08em;
@@ -13,9 +22,12 @@
 
 
     .popout{
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
         font-weight: 900;
         font-size: 100px;
-        padding-top: 155px;
+        padding-top: 205px;
         padding-left: 80px;
 
         @keyframes ani{
@@ -52,6 +64,9 @@
     }
       
     .popout-1{
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
         font-family: Futura, sans-serif;
         font-weight: 900;
         padding-top: 30px;
@@ -91,6 +106,9 @@
         }
     }
     .wrapper {
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
         padding-left: 80px;
         padding-top: 40px;
     }

@@ -11,7 +11,7 @@ function Intro() {
   useEffect(() => {
     init(textRef.current, {
       showCursor: false,
-      backDelay: 1500,
+      backDelay: 1500, 
       backSpeed:60,
       strings: ["Student", "Geek", "Tech Enthusiast"],
     });
@@ -19,7 +19,7 @@ function Intro() {
 
   return (
     <>
-    <div className='intro'>
+    <div className='intro' id = "About">
       <p class="popout">
       <span>Hi</span><span>,</span>
       <span>I</span><span>Am</span><span>Rohith</span><span>.</span><br></br>

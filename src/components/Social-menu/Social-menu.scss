@@ -1,4 +1,7 @@
 .social-menu ul {
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     position: absolute;
     top: 52%;
     right: 1%;
@@ -7,9 +10,19 @@
     margin: 0;
     display: block;
 }
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
 .social-menu ul li {
     list-style: none;
-    padding-top: 10px;
+    padding-top: 15px;
     margin: 0 10px;
 }
 .social-menu ul li .fa {

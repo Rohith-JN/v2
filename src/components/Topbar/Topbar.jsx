@@ -8,9 +8,9 @@ function Topbar() {
         </div>
         <div className = "nav-links">
             <ul>
-                <li><a href = "#" class = "link">ABOUT</a></li>
-                <li><a href = "#" class = "link">PROJECTS</a></li>
-                <li><a href = "#" class = "link">CONTACT</a></li>
+                <li><a href = "#About" class = "link">ABOUT</a></li>
+                <li><a href = "#Projects" class = "link">PROJECTS</a></li>
+                <li><a href = "#Contact" class = "link">CONTACT</a></li>
             </ul>
         </div>
     </div>
