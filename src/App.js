@@ -1,14 +1,14 @@
-import SocialMenu from "./components/Social-menu/Social-menu";
 import Topbar from "./components/Topbar/Topbar";
+import Intro from "./components/Intro/Intro";
+import './app.scss';
 
 function App() {
   return (
     <>
     <div className="app">
       <Topbar />
-      <SocialMenu />
       <div className="sections">
-        
+        <Intro />
       </div>
     </div>
     </>
