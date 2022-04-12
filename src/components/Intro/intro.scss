@@ -1,5 +1,6 @@
 .intro {
-    background: grey;
+    background-image: url('./Background.png');
+    background-size: cover;
     scroll-snap-align: start;
 
     @keyframes fadeInAnimation {
@@ -10,7 +11,7 @@
             opacity: 1;
          }
     }
-    
+
     $t: 1s;
     $d: 0.08em;
     $n: 8;
@@ -114,24 +115,24 @@
         font-size: 50px;
     }
     .social-menu ul {
-        animation: fadeInAnimation ease 4s;
+        animation: moveLeft ease 3s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
         position: absolute;
-        top: 52%;
-        right: 1%;
+        top: 40%;
+        right: 2%;
         transform: translate(-50%, -50%);
         padding: 0;
         margin: 0;
         display: block;
     }
     
-    @keyframes fadeInAnimation {
+    @keyframes moveLeft {
         0% {
-            opacity: 0;
+            transform: translateX(150px);
         }
         100% {
-            opacity: 1;
+            transform: translateX(0);
          }
     }
     

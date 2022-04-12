@@ -3,18 +3,30 @@ import Intro from "./components/Intro/Intro";
 import Projects from "./components/Works/Projects";
 import Contact from "./components/Contact/Contact";
 import './app.scss';
+import React, { useEffect, useState } from "react";
+import Load from "./components/Loading-screen/Load";
 
-function App() {
+export default function App() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
-    <div className="app">
-      <Topbar />
-      <div className="parts">
-        <Intro />
-        <Projects />
-        <Contact />
-      </div>
+    <div>{
+      loading ? <Load />: 
+      <div className="app">
+        <Topbar />
+        <div className="parts">
+          <Intro />
+          <Projects />
+          <Contact />
+        </div>
+      </div>}
     </div>
   );
 }
-
-export default App;

@@ -23,7 +23,7 @@ function Intro() {
       <span>I</span><span>Am</span><span>Rohith</span><span>.</span><br></br>
       </p>
       <p class="popout-1">
-        <span>Trying</span><span>to</span>
+        <span>Trying</span><span>To</span>
         <span>Learn</span><span>As</span><span>Much</span><span>As</span><span>I</span><span>Can</span>
       </p>
       <div className="wrapper">
