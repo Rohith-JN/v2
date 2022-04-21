@@ -1,7 +1,10 @@
 .intro {
-    background-image: url('./Background.png');
+    background-image: url('./assets/cool-background.svg');
     background-size: cover;
-    scroll-snap-align: start;
+    background-color: rgb(35, 34, 34);
+    height: calc(100vh - 70px);
+    position: relative;
+    top: 70px;
 
     @keyframes fadeInAnimation {
         0% {
@@ -16,17 +19,16 @@
     $d: 0.08em;
     $n: 8;
     $e: cubic-bezier(0.860, 0.000, 0.070, 1.000); 
-    $front: black;
-    $back: lightblue;
-
+    $front: white;
+    $back: grey;
 
     .popout{
-        animation: fadeInAnimation ease 4s;
+        animation: moveRight ease 4s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
         font-weight: 900;
         font-size: 100px;
-        padding-top: 205px;
+        padding-top: 175px;
         padding-left: 80px;
 
         @keyframes ani{
@@ -52,9 +54,13 @@
             }
         }
         span{
+            cursor:pointer;
             margin-right: 20px;
             position: relative;
             display: inline-block;
+            color: white;
+        }
+        span:hover {
             animation: ani $t infinite alternate $e;
             @for $i from 1 through $n{
                 &:nth-last-child(#{$i}n){ animation-delay: -$t*$i/$n/2;}
@@ -63,7 +69,7 @@
     }
       
     .popout-1{
-        animation: fadeInAnimation ease 4s;
+        animation: moveRight ease 4s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
         font-family: Futura, sans-serif;
@@ -95,9 +101,13 @@
             }
         }
         span{
+            cursor:pointer;
             margin-right: 20px;
             position: relative;
             display: inline-block;
+            color: white;
+        }
+        span:hover {
             animation: ani $t infinite alternate $e;
             @for $i from 1 through $n{
                 &:nth-last-child(#{$i}n){ animation-delay: -$t*$i/$n/2;}
@@ -105,21 +115,26 @@
         }
     }
     .wrapper {
-        animation: fadeInAnimation ease 4s;
+        animation: moveRight ease 4s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
         padding-left: 80px;
         padding-top: 40px;
+
+        span {
+            font-size: 50px;
+        }
     }
     h3 {
         font-size: 50px;
+        color: white;
     }
     .social-menu ul {
         animation: moveLeft ease 3s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
         position: absolute;
-        top: 40%;
+        top: 33%;
         right: 2%;
         transform: translate(-50%, -50%);
         padding: 0;
@@ -135,6 +150,16 @@
             transform: translateX(0);
          }
     }
+
+    @keyframes moveRight {
+        0% {
+            transform: translateX(-150px);
+        }
+        100% {
+            transform: translateX(0);
+         }
+    }
+
     
     .social-menu ul li {
         list-style: none;

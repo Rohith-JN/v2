@@ -4,21 +4,18 @@
         display: none;
     }
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
 
     .app {
         height: 100vh;
-    
+        
         .parts {
             width: 100%;
-            height: calc(100vh - 0px);
-            position: relative;
-            top: 70px;
             
             > *{
-                width: 100vw;
-                height: calc(100vh - 0px);
-                scroll-snap-align: start;
+                position: relative;
+                top: 70px;
+                width: 100%;
+                height: calc(100vh - 70px);
             }
         }
     }

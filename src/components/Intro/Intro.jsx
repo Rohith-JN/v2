@@ -3,6 +3,7 @@ import { init } from "ityped";
 import { useEffect, useRef } from "react";
 
 
+
 function Intro() {
   const textRef = useRef();
 
@@ -16,7 +17,6 @@ function Intro() {
   }, []);
 
   return (
-    <>
     <div className='intro' id = "About">
       <p class="popout">
       <span>Hi</span><span>,</span>
@@ -27,7 +27,7 @@ function Intro() {
         <span>Learn</span><span>As</span><span>Much</span><span>As</span><span>I</span><span>Can</span>
       </p>
       <div className="wrapper">
-        <h3>A  <span style = {{color: 'lightblue'}}ref={textRef}></span></h3>
+        <h3>A  <span style = {{color: 'white'}}ref={textRef}></span></h3>
       </div>
       <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&display=swap" rel="stylesheet"></link>
@@ -40,7 +40,6 @@ function Intro() {
             </ul>
         </div>
     </div>
-    </>
   )
 }
 
