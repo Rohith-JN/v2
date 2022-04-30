@@ -7,16 +7,5 @@
 
     .app {
         height: 100vh;
-        
-        .parts {
-            width: 100%;
-            
-            > *{
-                position: relative;
-                top: 70px;
-                width: 100%;
-                height: calc(100vh - 70px);
-            }
-        }
     }
 }

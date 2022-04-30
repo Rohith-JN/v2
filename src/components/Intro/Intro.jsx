@@ -19,15 +19,10 @@ function Intro() {
   return (
     <div className='intro' id = "About">
       <p class="popout">
-      <span>Hi</span><span>,</span>
-      <span>I</span><span>Am</span><span>Rohith</span><span>.</span><br></br>
-      </p>
-      <p class="popout-1">
-        <span>Trying</span><span>To</span>
-        <span>Learn</span><span>As</span><span>Much</span><span>As</span><span>I</span><span>Can</span>
+      <span>ROH<span>I</span>TH</span><span>NAMBIAR</span><span>.</span><br></br>
       </p>
       <div className="wrapper">
-        <h3>A  <span style = {{color: 'white'}}ref={textRef}></span></h3>
+       <span ref={textRef}></span>
       </div>
       <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&display=swap" rel="stylesheet"></link>
