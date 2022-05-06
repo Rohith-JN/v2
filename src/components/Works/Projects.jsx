@@ -30,8 +30,8 @@ function Projects() {
             </p>
             <p>Languages: Python</p>
             <p>
-              Check out the project on <a href="">Github</a> |{' '}
-              <a href="">PyPI</a>
+              Check out the project on <a href="https://github.com/Rohith-JN/Categorize-CLI">Github</a> |{' '}
+              <a href="https://pypi.org/project/categorize-cli/">PyPI</a>
             </p>
           </div>
         </div>
@@ -53,7 +53,7 @@ function Projects() {
             </p>
             <p>Languages: Python</p>
             <p>
-              Check out the project on <a href="">Github</a>
+              Check out the project on <a href="https://github.com/Rohith-JN/Friday">Github</a>
             </p>
           </div>
         </div>
@@ -76,7 +76,7 @@ function Projects() {
             </p>
             <p>Languages: Dart</p>
             <p>
-              Check out the project on <a href="">Github</a>
+              Check out the project on <a href="https://github.com/Rohith-JN/Tasks">Github</a>
             </p>
           </div>
         </div>
@@ -103,7 +103,7 @@ function Projects() {
             </p>
             <p>Languages: Dart</p>
             <p>
-              Check out the project on <a href="">Github</a>
+              Check out the project on <a href="https://github.com/Rohith-JN/Clock">Github</a>
             </p>
           </div>
         </div>
@@ -125,7 +125,7 @@ function Projects() {
             </p>
             <p>Languages: Javascript | HTML | CSS | SCSS</p>
             <p>
-              Check out the project on <a href="">Github</a>
+              Check out the project on <a href="https://github.com/Rohith-JN/JS-authentication">Github</a>
             </p>
           </div>
         </div>
