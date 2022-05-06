@@ -1,1 +1,3 @@
-# Personal-web-site made using React JS
+## Rohith's Personal Site
+
+View it here: https://rohith-jn.github.io/personal-site/
