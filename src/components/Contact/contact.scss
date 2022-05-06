@@ -1,7 +1,233 @@
 .Contact {
     scroll-snap-align: start;
-    background-color: green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #232222;
+    height: 100vh;
+
+    .section-header {
+        text-align: center;
+        margin: 0 auto;
+        padding: 40px 0;
+        font: 300 60px;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+    }
+
+    .contact-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 20px;
+        position: relative;
+        max-width: 1040px;
+    }
+
+    /* Left contact page */
+    .form-horizontal {
+        /*float: left;*/
+        max-width: 400px;
+        font-family: 'Lato';
+        font-weight: 400;
+    }
+
+    .form-control {
+        padding: 12px;
+        margin: 8px 0;
+        width: 350px;
+        background-color: transparent;
+        outline: none;
+        color: #fff;
+        letter-spacing: 1px;
+        border-color: transparent;
+    }
+
+    /* Begin Right Contact Page */
+    .direct-contact-container {
+        max-width: 400px;
+    }
+
+    /* Location, Phone, Email Section */
+    .contact-list {
+        list-style-type: none;
+        margin-left: -30px;
+        padding-right: 20px;
+    }
+
+    .list-item {
+        line-height: 4;
+        color: #aaa;
+    }
+
+    .contact-text {
+        font: 300 18px 'Lato', sans-serif;
+        letter-spacing: 1.9px;
+        color: #bbb;
+    }
+
+    .place {
+        margin-left: 62px;
+    }
+
+    .gmail {
+        margin-left: 53px;
+    }
+
+    .contact-text a {
+        color: #bbb;
+        text-decoration: none;
+        transition-duration: 0.2s;
+    }
+
+    .contact-text a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+    /* Social Media Icons */
+    .social-media-list {
+        position: relative;
+        font-size: 22px;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .social-media-list li a {
+        color: #fff;
+    }
+
+    .social-media-list li {
+        position: relative;
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        margin: 10px 3px;
+        line-height: 60px;
+        margin-left: 20px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: rgb(27, 27, 27);
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+
+    .social-media-list li:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 50%;
+        opacity: 0;
+        box-shadow: 0 0 0 1px #fff;
+        transition: all .2s ease-in-out;
+    }
+
+    .social-media-list li:hover {
+        background-color: #fff;
+    }
+
+    .social-media-list li:hover:after {
+        opacity: 1;
+        transform: scale(1.12);
+        transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+    }
+
+    .social-media-list a li:hover {
+        color: #000;
+    }
+
+    .copyright {
+        font: 200 14px 'Oswald', sans-serif;
+        color: #555;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    hr {
+        border-color: rgba(255, 255, 255, .6);
+    }
+}
+
+
+$primary: #9b9b9b;
+$secondary: #9b9b9b;
+$white: #fff;
+$gray: #9b9b9b;
+
+button {
+    cursor: pointer;
+    margin-top: 14px;
+    border-color: white;
+    background-color: transparent;
+    width: 400px;
+    height: 50px;
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 15px;
+}
+
+.form__field {
+    width: 100%;
+    font-family: inherit;
+    border: 0;
+    border-bottom: 2px solid $gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: $white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    font-family: sans-serif;
+
+    &::placeholder {
+        color: transparent;
+    }
+
+    &:placeholder-shown~.form__label {
+        font-size: 1.3rem;
+        cursor: text;
+        top: 20px;
+    }
+}
+
+.form__label {
+    font-family: sans-serif;
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $gray;
+}
+
+.form__field:focus {
+    ~.form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+        color: $primary;
+        font-weight: 700;
+    }
+}
+
+/* reset input */
+.form__field {
+
+    &:required,
+    &:invalid {
+        box-shadow: none;
+    }
 }

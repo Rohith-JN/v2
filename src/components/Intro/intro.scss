@@ -8,61 +8,70 @@
         0% {
             opacity: 0;
         }
+
         100% {
             opacity: 1;
-         }
+        }
     }
 
     $t: 1s;
     $d: 0.08em;
     $n: 8;
-    $e: cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+    $e: cubic-bezier(0.860, 0.000, 0.070, 1.000);
     $front: white;
     $back: grey;
 
-    .popout{
+    .popout {
         font-weight: 900;
         font-size: 60px;
         padding-top: 255px;
         padding-left: 80px;
 
-        @keyframes ani{
-            0%{
-                transform: translate3d(0,0,0);
+        @keyframes ani {
+            0% {
+                transform: translate3d(0, 0, 0);
                 text-shadow: 0em 0em 0 $back;
                 color: $front;
             }
-            30%{
-                transform: translate3d(0,0,0);
+
+            30% {
+                transform: translate3d(0, 0, 0);
                 text-shadow: 0em 0em 0 $back;
                 color: $front;
             }
-            70%{
-                transform: translate3d($d,-$d,0);
+
+            70% {
+                transform: translate3d($d, -$d, 0);
                 text-shadow: -$d $d $back;
                 color: $front;
             }
-            100%{
-                transform: translate3d($d,-$d,0);
+
+            100% {
+                transform: translate3d($d, -$d, 0);
                 text-shadow: -$d $d $back;
                 color: $front;
             }
         }
-        span{
-            cursor:pointer;
+
+        span {
+            cursor: pointer;
             margin-right: 20px;
             position: relative;
             display: inline-block;
             color: white;
         }
+
         span:hover {
             animation: ani $t infinite alternate $e;
-            @for $i from 1 through $n{
-                &:nth-last-child(#{$i}n){ animation-delay: -$t*$i/$n/2;}
+
+            @for $i from 1 through $n {
+                &:nth-last-child(#{$i}n) {
+                    animation-delay: -$t*$i/$n/2;
+                }
             }
         }
     }
-      
+
     .wrapper {
         padding-left: 80px;
         padding-top: 40px;
@@ -73,6 +82,7 @@
             font-size: 45px;
         }
     }
+
     .social-menu ul {
         animation: moveLeft ease 3s;
         animation-iteration-count: 1;
@@ -85,28 +95,31 @@
         margin: 0;
         display: block;
     }
-    
+
     @keyframes moveLeft {
         0% {
             transform: translateX(150px);
         }
+
         100% {
             transform: translateX(0);
-         }
+        }
     }
 
-    
+
     .social-menu ul li {
         list-style: none;
         padding-top: 15px;
         margin: 0 10px;
     }
+
     .social-menu ul li .fa {
         color: #000000;
         font-size: 25px;
         line-height: 50px;
         transition: .5s;
     }
+
     .social-menu ul li a {
         position: sticky;
         display: block;
@@ -119,7 +132,8 @@
         transform: translate(0, 0px);
         box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
     }
+
     .social-menu ul li a:hover {
         transform: translate(-10px, 0);
-    }    
+    }
 }

@@ -1,11 +1,8 @@
 * {
+    scroll-behavior: smooth;
     scrollbar-width: none; //for firefox
     &::-webkit-scrollbar{
         display: none;
     }
-    scroll-behavior: smooth;
-
-    .app {
-        height: 100vh;
-    }
 }
+
