@@ -52,6 +52,7 @@ function Contact() {
           >
             <input
               type="input"
+              autoComplete="off"
               class="form__field"
               placeholder="Name"
               name="name"
