@@ -21,7 +21,6 @@ function Intro() {
           ROH<span>I</span>TH
         </span>
         <span>NAMBIAR</span>
-        <span>.</span>
         <br></br>
       </p>
       <div className="wrapper">
