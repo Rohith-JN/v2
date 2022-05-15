@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./contact.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -8,6 +8,7 @@ AOS.init();
 
 function Contact() {
   const form = useRef();
+  const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -22,9 +23,11 @@ function Contact() {
       .then(
         (result) => {
           console.log(result.text);
+          setMessage("Sent message successfully");
         },
         (error) => {
           console.log(error.text);
+          setMessage("Could not send message");
         }
       );
     e.target.reset();
@@ -145,49 +148,9 @@ function Contact() {
           >
             <button type="submit">Send</button>
           </div>
-        </form>
-        <div className="direct-contact-container">
-          <ul className="contact-list">
-            <li
-              className="list-item"
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="900"
-              data-aos-easing="ease"
-              data-aos-mirror="true"
-              data-aos-once="false"
-            >
-              <i className="fa fa-map-marker fa-2x">
-                <span className="contact-text place">
-                  Bangalore, Karnataka, India
-                </span>
-              </i>
-            </li>
-            <li
-              className="list-item"
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="900"
-              data-aos-easing="ease"
-              data-aos-mirror="true"
-              data-aos-once="false"
-            >
-              <i className="fa fa-envelope fa-2x">
-                <span className="contact-text gmail">
-                  <a
-                    href="mailto:rohithnambiar04@gmail.com"
-                    title="Send me an email"
-                  >
-                    rohithnambiar04@gmail.com
-                  </a>
-                </span>
-              </i>
-            </li>
-          </ul>
-          <ul
-            className="social-media-list"
+          <p className="message">{message}</p>
+          <div
+            className="direct-contact-container"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="50"
@@ -196,38 +159,40 @@ function Contact() {
             data-aos-mirror="true"
             data-aos-once="false"
           >
-            <a
-              href="https://github.com/Rohith-JN"
-              target="_blank"
-              className="contact-icon"
-              rel="noreferrer"
-            >
-              <li>
-                <i className="fa fa-github" aria-hidden="true"></i>
-              </li>
-            </a>
-            <a
-              href="https://twitter.com/RohithNambiar4"
-              target="_blank"
-              className="contact-icon"
-              rel="noreferrer"
-            >
-              <li>
-                <i className="fa fa-twitter" aria-hidden="true"></i>
-              </li>
-            </a>
-            <a
-              href="https://t.me/RohithJN"
-              target="_blank"
-              className="contact-icon"
-              rel="noreferrer"
-            >
-              <li>
-                <i className="fa fa-telegram" aria-hidden="true"></i>
-              </li>
-            </a>
-          </ul>
-        </div>
+            <ul className="social-media-list">
+              <a
+                href="https://github.com/Rohith-JN"
+                target="_blank"
+                className="contact-icon"
+                rel="noreferrer"
+              >
+                <li>
+                  <i className="fa fa-github" aria-hidden="true"></i>
+                </li>
+              </a>
+              <a
+                href="https://twitter.com/RohithNambiar4"
+                target="_blank"
+                className="contact-icon"
+                rel="noreferrer"
+              >
+                <li>
+                  <i className="fa fa-twitter" aria-hidden="true"></i>
+                </li>
+              </a>
+              <a
+                href="https://t.me/RohithJN"
+                target="_blank"
+                className="contact-icon"
+                rel="noreferrer"
+              >
+                <li>
+                  <i className="fa fa-telegram" aria-hidden="true"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </form>
       </div>
     </div>
   );

@@ -8,16 +8,6 @@
     height: 100vh;
     max-width: 100%;
 
-    @keyframes fadeInAnimation {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
     $t: 1s;
     $d: 0.08em;
     $n: 8;

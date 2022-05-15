@@ -2,6 +2,7 @@
     scroll-snap-align: start;
     background-color: #232222;
     height: 100vh;
+    max-width: 100%;
 
     .section-header {
         text-align: center;
@@ -15,17 +16,15 @@
 
     .contact-wrapper {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         margin: 0 auto;
         padding: 20px;
         position: relative;
         max-width: 1040px;
     }
 
-    /* Left contact page */
     .form-horizontal {
-        /*float: left;*/
         max-width: 400px;
         font-family: 'Lato';
         font-weight: 400;
@@ -42,52 +41,13 @@
         border-color: transparent;
     }
 
-    /* Begin Right Contact Page */
     .direct-contact-container {
         max-width: 400px;
     }
 
-    /* Location, Phone, Email Section */
-    .contact-list {
-        list-style-type: none;
-        margin-left: -30px;
-        padding-right: 20px;
-    }
-
-    .list-item {
-        line-height: 4;
-        color: #aaa;
-    }
-
-    .contact-text {
-        font: 300 18px 'Lato', sans-serif;
-        letter-spacing: 1.9px;
-        color: #bbb;
-    }
-
-    .place {
-        margin-left: 62px;
-    }
-
-    .gmail {
-        margin-left: 53px;
-    }
-
-    .contact-text a {
-        color: #bbb;
-        text-decoration: none;
-        transition-duration: 0.2s;
-    }
-
-    .contact-text a:hover {
-        color: #fff;
-        text-decoration: none;
-    }
-
-
-    /* Social Media Icons */
     .social-media-list {
         position: relative;
+        top: 30px;
         font-size: 22px;
         text-align: center;
         width: 100%;
@@ -140,17 +100,6 @@
 
     .social-media-list a li:hover {
         color: #000;
-    }
-
-    .copyright {
-        font: 200 14px 'Oswald', sans-serif;
-        color: #555;
-        letter-spacing: 1px;
-        text-align: center;
-    }
-
-    hr {
-        border-color: rgba(255, 255, 255, .6);
     }
 }
 
@@ -223,11 +172,16 @@ button {
     }
 }
 
-/* reset input */
 .form__field {
 
     &:required,
     &:invalid {
         box-shadow: none;
     }
+}
+
+p.message {
+    color: white;
+    padding-top: 15px;
+    font-family: sans-serif;
 }

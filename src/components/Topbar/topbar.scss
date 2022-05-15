@@ -12,6 +12,19 @@
   width: 100%;
   height: 70px;
   z-index: 2;
+  animation: moveRight ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-150px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .menu {
