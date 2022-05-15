@@ -1,7 +1,10 @@
 .intro {
     background-image: url('./assets/cool-background.svg');
-    background-size: cover;
     background-color: rgb(35, 34, 34);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     max-width: 100%;
 

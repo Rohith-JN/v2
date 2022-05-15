@@ -1,7 +1,7 @@
-import React from 'react';
-import './projects.scss';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from "react";
+import "./projects.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
 AOS.init();
 
 function Projects() {
@@ -10,9 +10,9 @@ function Projects() {
       <div className="heading">
         <h1>PROJECTS</h1>
       </div>
-      <div class="entries">
+      <div className="entries">
         <div
-          class="entry"
+          className="entry"
           data-aos="fade-up"
           data-aos-offset="200"
           data-aos-delay="50"
@@ -21,8 +21,8 @@ function Projects() {
           data-aos-mirror="true"
           data-aos-once="false"
         >
-          <div class="title">Categorize-CLI</div>
-          <div class="body">
+          <div className="title">Categorize-CLI</div>
+          <div className="body">
             <p>
               Categorize-CLI is a command-line-tool made using python to
               organize files in a given directory based on categories like
@@ -30,13 +30,13 @@ function Projects() {
             </p>
             <p>Languages: Python</p>
             <p>
-              Check out the project on <a href="https://github.com/Rohith-JN/Categorize-CLI">Github</a> |{' '}
+              Check out the project on <a href="https://github.com/Rohith-JN/Categorize-CLI">Github</a> |{" "}
               <a href="https://pypi.org/project/categorize-cli/">PyPI</a>
             </p>
           </div>
         </div>
         <div
-          class="entry"
+          className="entry"
           data-aos="fade-up"
           data-aos-offset="200"
           data-aos-delay="50"
@@ -45,8 +45,8 @@ function Projects() {
           data-aos-mirror="true"
           data-aos-once="false"
         >
-          <div class="title">Friday</div>
-          <div class="body">
+          <div className="title">Friday</div>
+          <div className="body">
             <p>
               A minimal but highly functional assistant made to automate common
               Windows tasks and other apps like Telegram.
@@ -58,7 +58,7 @@ function Projects() {
           </div>
         </div>
         <div
-          class="entry"
+          className="entry"
           data-aos="fade-up"
           data-aos-offset="200"
           data-aos-delay="50"
@@ -67,8 +67,8 @@ function Projects() {
           data-aos-mirror="true"
           data-aos-once="false"
         >
-          <div class="title">Tasks</div>
-          <div class="body">
+          <div className="title">Tasks</div>
+          <div className="body">
             <p>
               A minimal Todo / Reminders app to quickly add reminders or todos
               and recieve notifications, made using Flutter, GETX for
@@ -81,7 +81,7 @@ function Projects() {
           </div>
         </div>
         <div
-          class="entry"
+          className="entry"
           data-aos="fade-up"
           data-aos-offset="200"
           data-aos-delay="50"
@@ -90,8 +90,8 @@ function Projects() {
           data-aos-mirror="true"
           data-aos-once="false"
         >
-          <div class="title">Clock</div>
-          <div class="body">
+          <div className="title">Clock</div>
+          <div className="body">
             <p>
               A minimal clock app inspired by the design of the clock app in
               Google Android OS.
@@ -108,7 +108,7 @@ function Projects() {
           </div>
         </div>
         <div
-          class="entry"
+          className="entry"
           data-aos="fade-up"
           data-aos-offset="200"
           data-aos-delay="50"
@@ -117,8 +117,8 @@ function Projects() {
           data-aos-mirror="true"
           data-aos-once="false"
         >
-          <div class="title">Neumorphic JS Auth-Page</div>
-          <div class="body">
+          <div className="title">Neumorphic JS Auth-Page</div>
+          <div className="body">
             <p>
               A Neumorphic authentication page made using HTML, SCSS and
               Javascript for Frontend and Firebase for backend.
