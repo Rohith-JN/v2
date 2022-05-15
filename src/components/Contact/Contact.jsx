@@ -1,33 +1,33 @@
-import React, { useRef, useState } from "react";
-import "./contact.scss";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import emailjs from "emailjs-com";
+import React, { useRef, useState } from 'react';
+import './contact.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import emailjs from 'emailjs-com';
 
 AOS.init();
 
 function Contact() {
   const form = useRef();
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_kqcnemw",
-        "template_2a8ejpr",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        "r0DWhD9Zi9SgWbZq8"
+        process.env.REACT_APP_USER_ID
       )
       .then(
         (result) => {
           console.log(result.text);
-          setMessage("Sent message successfully");
+          setMessage('Sent message successfully');
         },
         (error) => {
           console.log(error.text);
-          setMessage("Could not send message");
+          setMessage('Could not send message');
         }
       );
     e.target.reset();
