@@ -1,0 +1,13 @@
+.Projects {
+    scroll-snap-align: start;
+    background-color: #232222;
+    min-height: 100vh;
+    margin: 0;
+    top: 70px;
+
+    .heading h1 {
+        padding-top: 50px;
+        color: white;
+        text-align: center;
+    }
+}

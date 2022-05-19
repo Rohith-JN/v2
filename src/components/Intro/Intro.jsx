@@ -1,6 +1,6 @@
-import "./intro.scss";
-import { init } from "ityped";
-import React, { useEffect, useRef } from "react";
+import './intro.scss';
+import { init } from 'ityped';
+import React, { useEffect, useRef } from 'react';
 
 function Intro() {
   const textRef = useRef();
@@ -10,18 +10,14 @@ function Intro() {
       showCursor: false,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Student", "Geek", "Tech Enthusiast"],
+      strings: ['Student', 'Geek', 'Tech Enthusiast'],
     });
   }, []);
 
   return (
-    <div className="intro" id="About">
+    <div className="intro" id="Intro">
       <p className="popout">
-        <span>
-          ROH<span>I</span>TH
-        </span>
-        <span>NAMBIAR</span>
-        <br></br>
+        <h1>ROH I TH NAMB I AR</h1>
       </p>
       <div className="wrapper">
         <span ref={textRef}></span>
@@ -53,6 +49,10 @@ function Intro() {
             </a>
           </li>
         </ul>
+      </div>
+      <div className="scroll">
+        <p>Scroll down</p>
+        <i class="arrow down"></i>
       </div>
     </div>
   );

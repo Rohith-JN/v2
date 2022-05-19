@@ -1,4 +1,4 @@
-import "./topbar.scss";
+import './topbar.scss';
 
 function Topbar() {
   return (
@@ -8,8 +8,15 @@ function Topbar() {
         <div className="spacer"></div>
         <div className="item">
           <span>
+            <a href="#Intro" className="link">
+              HOME
+            </a>
+          </span>
+        </div>
+        <div className="item">
+          <span>
             <a href="#About" className="link">
-              ABOUT
+              About
             </a>
           </span>
         </div>
