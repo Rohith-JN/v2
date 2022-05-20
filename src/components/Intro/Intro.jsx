@@ -17,7 +17,7 @@ function Intro() {
   return (
     <div className="intro" id="Intro">
       <p className="popout">
-        <h1>ROH I TH NAMB I AR</h1>
+        <h1>ROH I TH </h1><h1>NAMB I AR</h1>
       </p>
       <div className="wrapper">
         <span ref={textRef}></span>

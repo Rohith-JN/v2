@@ -1,16 +1,163 @@
 .About {
     scroll-snap-align: start;
     background-color: #232222;
-    height: 100vh;
+    background-image: url('./assets/800252.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 100vh;
     max-width: 100%;
+    display: flex;
+    flex-direction: row;
 
-    .section-header {
-        text-align: center;
-        margin: 0 auto;
-        padding: 40px 0;
-        font: 300 60px;
-        color: #fff;
-        text-transform: uppercase;
-        letter-spacing: 6px;
+    .left {
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+
+        .heading {
+            padding-left: 100px;
+            width: 100px;
+        }
+
+        .heading h1 {
+            cursor: pointer;
+            font: 300 60px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            direction: ltr;
+            transition: 0.5s;
+            user-select: none;
+        }
+
+        .heading h1:hover {
+            color: #08fdd8;
+        }
+
+        .para {
+            padding-left: 100px;
+            max-width: 500px;
+        }
+
+        .para p {
+            direction: ltr;
+            color: rgb(171, 166, 166);
+            font-family: sans-serif;
+            font-size: 25px;
+            font-style: normal;
+            letter-spacing: 0.5px;
+            line-height: 35px;
+            user-select: none;
+        }
+
+        .para p a {
+            text-decoration: none;
+            font-family: sans-serif;
+            color: white;
+            transition: 0.5s;
+        }
+
+        .para p a:hover {
+            color: #08fdd8;
+        }
+    }
+
+    .right {
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .tagcloud--item {
+            font-family: sans-serif;
+            color: white;
+            font-size: 25px;
+            margin: auto;
+            width: 30%;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        .tagcloud--item:hover {
+            color: #08fdd8;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1251px) {
+    .About {
+
+        .heading {
+            padding-right: 100px;
+        }
+
+        .left {
+            width: 100%;
+            align-items: center;
+            padding-left: 0px;
+
+            .para {
+                padding-left: 0px;
+            }
+
+        }
+
+        .right {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 536px) {
+    .About {
+
+        .heading {
+            padding-right: 100px;
+        }
+
+        .left {
+            width: 100%;
+            align-items: center;
+            padding-left: 0px;
+
+            .para {
+                padding-left: 0px;
+            }
+
+            .para p {
+                font-size: 20px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .About {
+
+        .heading {
+            padding-right: 100px;
+        }
+
+        .left {
+            width: 100%;
+            align-items: center;
+            padding-left: 0px;
+
+            .para {
+                padding-left: 10px;
+            }
+
+            .para p {
+                font-size: 20;
+            }
+        }
     }
 }

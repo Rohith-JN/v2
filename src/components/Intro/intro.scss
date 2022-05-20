@@ -21,6 +21,12 @@
             display: inline-block;
             color: white;
             font-size: 60px;
+            transition: 0.5s;
+            user-select: none;
+        }
+
+        h1:hover {
+            color: #08fdd8;
         }
     }
 
@@ -32,6 +38,7 @@
             color: rgb(171, 166, 166);
             font-family: sans-serif;
             font-size: 45px;
+            user-select: none;
         }
     }
 
@@ -166,6 +173,28 @@
 
             h1 {
                 font-size: 45px;
+            }
+        }
+
+        .wrapper {
+            padding-left: 20px;
+            padding-top: 20px;
+
+            span {
+                font-size: 30px;
+            }
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 351px) {
+    .intro {
+        .popout {
+
+            h1 {
+                font-size: 40px;
             }
         }
 

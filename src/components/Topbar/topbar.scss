@@ -46,6 +46,7 @@
   display: inline-block;
   cursor: pointer;
   pointer-events: all;
+  user-select: none;
 }
 
 .spacer {
@@ -82,6 +83,7 @@ span a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.805);
   font-size: 16px;
+  user-select: none;
 }
 
 span {
@@ -180,4 +182,10 @@ span {
 
 .menu:hover .item:nth-child(10) {
   transition-delay: 0.7s;
+}
+
+@media screen and (max-width: 351px) {
+  .navbar {
+    padding-top: 20px;
+  }
 }
