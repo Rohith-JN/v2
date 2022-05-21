@@ -1,13 +1,42 @@
 .Projects {
     scroll-snap-align: start;
     background-color: #232222;
-    min-height: 100vh;
+    min-height: 130vh;
     margin: 0;
-    top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
 
-    .heading h1 {
-        padding-top: 50px;
-        color: white;
-        text-align: center;
+    .row-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .row-2 {
+        display: flex;
+        width: 79%;
+        align-items: center;
+        flex-direction: row;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Projects {
+        flex-direction: column;
+
+        .row-1 {
+            flex-direction: column;
+            margin-top: 70px;
+        }
+
+        .row-2 {
+            flex-direction: column;
+        }
     }
 }

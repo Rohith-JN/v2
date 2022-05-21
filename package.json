@@ -56,7 +56,6 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.4",
     "gh-pages": "^4.0.0",
-    "random-words": "1.1.2",
     "sass": "^1.51.0",
     "TagCloud": "^2.2.0",
     "three": "^0.140.2"
