@@ -18,15 +18,15 @@
         flex-direction: column;
         gap: 40px;
         justify-content: center;
+        padding-left: 100px;
 
         .heading {
-            padding-left: 100px;
             width: 100px;
         }
 
         .heading h1 {
             cursor: pointer;
-            font: 300 60px;
+            font: 60px;
             color: #fff;
             text-transform: uppercase;
             letter-spacing: 6px;
@@ -40,7 +40,6 @@
         }
 
         .para {
-            padding-left: 100px;
             max-width: 500px;
         }
 
@@ -93,20 +92,9 @@
 
 @media screen and (max-width: 1251px) {
     .About {
-
-        .heading {
-            padding-right: 100px;
-        }
-
         .left {
             width: 100%;
             align-items: center;
-            padding-left: 0px;
-
-            .para {
-                padding-left: 0px;
-            }
-
         }
 
         .right {
@@ -115,9 +103,8 @@
     }
 }
 
-@media screen and (max-width: 536px) {
+@media screen and (max-width: 790px) {
     .About {
-
         .heading {
             padding-right: 100px;
         }
@@ -126,22 +113,16 @@
             width: 100%;
             align-items: center;
             padding-left: 0px;
-
-            .para {
-                padding-left: 0px;
-            }
 
             .para p {
                 font-size: 20px;
             }
         }
-
     }
 }
 
 @media screen and (max-width: 500px) {
     .About {
-
         .heading {
             padding-right: 100px;
         }
@@ -152,7 +133,7 @@
             padding-left: 0px;
 
             .para {
-                padding-left: 10px;
+                padding: 0px 0px 10px 10px;
             }
 
             .para p {

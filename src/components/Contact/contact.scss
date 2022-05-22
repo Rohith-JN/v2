@@ -131,3 +131,13 @@
         }
     }
 }
+
+@media screen and (max-width: 401px) {
+    .row-1 {
+        input {
+            width: 110%;
+            max-width: 110%;
+            height: 50px;
+        }
+    }
+}

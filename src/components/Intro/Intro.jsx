@@ -16,11 +16,11 @@ function Intro() {
 
   return (
     <div className="intro" id="Intro">
-      <p className="popout">
-        <h1>ROH I TH </h1>
-        <h1>NAMB I AR</h1>
-      </p>
-      <div className="wrapper">
+      <div className="heading">
+        <p className="popout">
+          <h1>ROH I TH </h1>
+          <h1>NAMB I AR</h1>
+        </p>
         <span ref={textRef}></span>
       </div>
       <link rel="preconnect" href="https://fonts.gstatic.com"></link>

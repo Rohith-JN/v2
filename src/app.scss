@@ -1,8 +1,8 @@
 * {
     scroll-behavior: smooth;
-    scrollbar-width: none; //for firefox
-    &::-webkit-scrollbar{
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
         display: none;
     }
 }
-

@@ -10,6 +10,7 @@ import {
 } from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
 
+
 AOS.init();
 
 function Contact() {
@@ -57,8 +58,8 @@ function Contact() {
           data-aos-delay="50"
           data-aos-duration="900"
           data-aos-easing="ease"
-          data-aos-mirror="true"
-          data-aos-once="false"
+          data-aos-mirror="false"
+          data-aos-once="true"
         >
           <div className="row-1">
             <input

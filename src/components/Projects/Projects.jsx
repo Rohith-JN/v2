@@ -16,8 +16,8 @@ function Projects() {
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease"
-        data-aos-mirror="true"
-        data-aos-once="false"
+        data-aos-mirror="false"
+        data-aos-once="true"
       >
         <Work
           heading={'Categorize-CLI'}
@@ -54,8 +54,8 @@ function Projects() {
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease"
-        data-aos-mirror="true"
-        data-aos-once="false"
+        data-aos-mirror="false"
+        data-aos-once="true"
       >
         <Work
           heading={'Clock'}

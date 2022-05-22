@@ -3,9 +3,11 @@ import TagCloud from 'TagCloud';
 import './about.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 AOS.init();
 
 function About() {
+
   const Tags = [
     'Python',
     'Javascript',
