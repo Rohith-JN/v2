@@ -184,8 +184,8 @@ span {
   transition-delay: 0.7s;
 }
 
-@media screen and (max-width: 351px) {
+@media screen and (max-width: 400px) {
   .navbar {
-    padding-top: 20px;
+    display: none;
   }
 }

@@ -4,21 +4,24 @@ import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import './app.scss';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Load from './components/Loading-screen/Load';
 
 export default function App() {
-  const [loading, setLoading] = useState(true);
+  const [isLoading, setIsLoading] = React.useState(true);
+
+  const handleLoading = () => {
+    setIsLoading(false);
+  };
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+    window.addEventListener('load', handleLoading);
+    return () => window.removeEventListener('load', handleLoading);
   }, []);
 
   return (
     <div>
-      {loading ? (
+      {isLoading ? (
         <Load />
       ) : (
         <div className="app">
