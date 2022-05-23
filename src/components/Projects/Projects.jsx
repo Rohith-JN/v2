@@ -9,6 +9,9 @@ AOS.init();
 function Projects() {
   return (
     <div className="Projects" id="Projects">
+      <div className="heading">
+        <h1>PROJECTS</h1>
+      </div>
       <div
         className="row-1"
         data-aos="fade-up"

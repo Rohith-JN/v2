@@ -21,7 +21,7 @@
         padding-left: 100px;
 
         .heading {
-            width: 100px;
+            width: 150px;
         }
 
         .heading h1 {
@@ -70,15 +70,12 @@
         width: 50%;
         height: 100vh;
         display: flex;
-        justify-content: center;
-        align-items: center;
 
         .tagcloud--item {
             font-family: sans-serif;
             color: white;
             font-size: 25px;
             margin: auto;
-            width: 30%;
             transition: 0.5s;
             cursor: pointer;
         }
@@ -90,11 +87,12 @@
     }
 }
 
-@media screen and (max-width: 1251px) {
+@media screen and (max-width: 1281px) {
     .About {
         .left {
             width: 100%;
             align-items: center;
+            padding-left: 0;
         }
 
         .right {
@@ -105,10 +103,6 @@
 
 @media screen and (max-width: 790px) {
     .About {
-        .heading {
-            padding-right: 100px;
-        }
-
         .left {
             width: 100%;
             align-items: center;
@@ -123,10 +117,6 @@
 
 @media screen and (max-width: 500px) {
     .About {
-        .heading {
-            padding-right: 100px;
-        }
-
         .left {
             width: 100%;
             align-items: center;
@@ -139,6 +129,14 @@
             .para p {
                 font-size: 20;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 821px) and (max-height: 1181px) {
+    .About {
+        .left {
+            padding-left: 0;
         }
     }
 }

@@ -7,7 +7,6 @@ import 'aos/dist/aos.css';
 AOS.init();
 
 function About() {
-
   const Tags = [
     'Python',
     'Javascript',

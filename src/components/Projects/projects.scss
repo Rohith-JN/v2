@@ -1,13 +1,23 @@
 .Projects {
     scroll-snap-align: start;
     background-color: #232222;
-    min-height: 130vh;
+    min-height: 135vh;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 50px;
+
+    .heading h1 {
+        text-align: center;
+        margin: 0 auto;
+        padding: 40px 0;
+        font: 300 60px;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+    }
 
     .row-1 {
         display: flex;
@@ -23,6 +33,7 @@
         align-items: center;
         flex-direction: row;
         gap: 50px;
+        padding-bottom: 5px;
     }
 }
 
@@ -32,7 +43,7 @@
 
         .row-1 {
             flex-direction: column;
-            margin-top: 70px;
+            margin-top: 0px;
         }
 
         .row-2 {
@@ -46,5 +57,4 @@
     .Projects {
         padding: 0px 10px 0px 10px;
     }
-
 }

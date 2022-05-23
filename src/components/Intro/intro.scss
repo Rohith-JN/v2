@@ -176,6 +176,40 @@
     }
 }
 
+@media screen and (max-width: 401px) {
+    .intro {
+        .scroll {
+            display: none;
+        }
+
+        .social-menu ul {
+            position: absolute;
+            width: 100%;
+            right: 0%;
+            display: flex;
+            justify-content: center;
+            top: 86%;
+            display: inline-flex;
+            animation: moveUp ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        .social-menu ul li a:hover {
+            transform: translate(0px, -10px);
+        }
+
+        @keyframes moveUp {
+            0% {
+                transform: translateY(150px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 351px) {
     .intro {
@@ -186,14 +220,6 @@
                     font-size: 40px;
                 }
             }
-        }
-    }
-}
-
-@media screen and (max-width: 401px) {
-    .intro {
-        .scroll {
-            display: none;
         }
     }
 }
