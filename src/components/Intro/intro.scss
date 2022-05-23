@@ -1,4 +1,15 @@
+@keyframes breath {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .intro {
+    animation: breath 1s ease-in-out;
     background-image: url('./assets/cool-background.svg');
     background-color: rgb(35, 34, 34);
     background-attachment: fixed;

@@ -13,9 +13,9 @@ export default function App() {
   const handleLoading = () => {
     setIsLoading(false);
   };
+  window.addEventListener('load', handleLoading);
 
   useEffect(() => {
-    window.addEventListener('load', handleLoading);
     return () => window.removeEventListener('load', handleLoading);
   }, []);
 

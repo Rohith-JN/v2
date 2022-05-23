@@ -183,9 +183,3 @@ span {
 .menu:hover .item:nth-child(10) {
   transition-delay: 0.7s;
 }
-
-@media screen and (max-width: 400px) {
-  .navbar {
-    display: none;
-  }
-}
