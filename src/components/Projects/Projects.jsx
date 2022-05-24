@@ -78,15 +78,6 @@ function Projects() {
           url={'https://github.com/Rohith-JN/JS-authentication'}
           color="#e35f5f"
         />
-        <Work
-          heading={'Portfolio website'}
-          para={
-            'Since this felt like a project I put a lot of effort in, I decided to put it here!'
-          }
-          language={'React JS'}
-          url={'https://github.com/Rohith-JN/personal-site'}
-          color="#e35f5f"
-        />
       </div>
     </div>
   );
