@@ -1,3 +1,3 @@
 ## Rohith's Personal Site
 
-View it here: https://rohith-jn.github.io/
+View it here: https://rohithnambiar.in/
