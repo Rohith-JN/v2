@@ -50,8 +50,8 @@ function About() {
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease"
-        data-aos-mirror="true"
-        data-aos-once="false"
+        data-aos-mirror="false"
+        data-aos-once="true"
       >
         <div className="heading">
           <h1>ABOUT</h1>

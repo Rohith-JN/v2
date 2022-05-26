@@ -189,7 +189,7 @@ span {
     display: none;
   }
 
-  .nav #menuToggle {
+  .nav .nav-menu #menuToggle {
     display: flex;
     -webkit-tap-highlight-color: transparent;
     -moz-tap-highlight-color: transparent;
@@ -216,6 +216,15 @@ ul {
   animation: moveRight ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+.nav-menu {
+  height: 45px;
+  width: 19%;
+  background-color: rgba(128, 128, 128, 0.315);
+  z-index: 2;
+  position: fixed;
+  top: 0;
 }
 
 #menuToggle input {
@@ -254,7 +263,7 @@ ul {
 #menuToggle input:checked~span {
   opacity: 1;
   transform: rotate(45deg) translate(-3px, -1px);
-  background: #36383F;
+  background: white;
 }
 
 #menuToggle input:checked~span:nth-last-child(3) {
@@ -274,11 +283,11 @@ ul {
   align-items: center;
   gap: 7px;
   width: 85%;
-  box-shadow: 0 0 10px #85888C;
+  box-shadow: 0 0 10px rgb(143, 141, 141);
   height: 100%;
   margin: -50px 0 0 -50px;
   padding: 50px;
-  background-color: #F5F6FA;
+  background-color: rgb(143, 141, 141);
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -293,9 +302,9 @@ ul {
 
 #menu li a {
   text-decoration: none;
-  color: #36383F;
+  color: white;
   font-size: 30px;
-  font-family: "Roboto";
+  font-family: Roboto;
 }
 
 #menuToggle input:checked~ul {
