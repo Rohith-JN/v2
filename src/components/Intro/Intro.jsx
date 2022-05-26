@@ -1,6 +1,7 @@
 import './intro.scss';
 import { init } from 'ityped';
 import React, { useEffect, useRef } from 'react';
+import Socials from '../Socials/Socials';
 
 function Intro() {
   const textRef = useRef();
@@ -32,25 +33,7 @@ function Intro() {
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         rel="stylesheet"
       ></link>
-      <div className="social-menu">
-        <ul>
-          <li>
-            <a href="https://twitter.com/RohithNambiar4" target="__blank">
-              <i className="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/Rohith-JN" target="__blank">
-              <i className="fa fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://t.me/RohithJN" target="__blank">
-              <i className="fa fa-telegram"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <Socials />
       <div className="scroll">
         <p>Scroll down</p>
         <i class="arrow down"></i>
