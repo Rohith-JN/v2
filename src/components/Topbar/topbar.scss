@@ -17,6 +17,10 @@
   animation-fill-mode: forwards;
 }
 
+.nav .nav-menu {
+  display: none;
+}
+
 @keyframes moveRight {
   0% {
     transform: translateX(-150px);
@@ -189,6 +193,10 @@ span {
     display: none;
   }
 
+  .nav .nav-menu {
+    display: block;
+  }
+
   .nav .nav-menu #menuToggle {
     display: flex;
     -webkit-tap-highlight-color: transparent;
@@ -283,11 +291,11 @@ ul {
   align-items: center;
   gap: 7px;
   width: 85%;
-  box-shadow: 0 0 10px rgb(143, 141, 141);
+  box-shadow: 0 0 10px rgb(56, 56, 56);
   height: 100%;
   margin: -50px 0 0 -50px;
   padding: 50px;
-  background-color: rgb(143, 141, 141);
+  background-color: rgb(56, 56, 56);
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -304,7 +312,9 @@ ul {
   text-decoration: none;
   color: white;
   font-size: 30px;
-  font-family: Roboto;
+  font-family: 'Roboto Sans', sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 #menuToggle input:checked~ul {
