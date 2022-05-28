@@ -34,7 +34,7 @@ function Projects() {
         <Work
           heading={'Friday'}
           para={
-            'A simple Personal assistant to automate windows made using Python'
+            'A simple personal assistant to automate Windows made using Python'
           }
           language={'Python'}
           url={'https://github.com/Rohith-JN/Friday'}
@@ -43,7 +43,7 @@ function Projects() {
         <Work
           heading={'Tasks'}
           para={
-            'A simple Todo/Reminders app made using Flutter, Getx for state management and get_storage'
+            'A simple todo/reminders app made using Flutter, Getx for state management and get_storage'
           }
           language={'Flutter, Dart'}
           url={'https://github.com/Rohith-JN/Tasks'}
@@ -72,7 +72,7 @@ function Projects() {
         <Work
           heading={'JS-authentication'}
           para={
-            'A simple authentication service made using javascript, HTML, CSS for Frontend and Firebase'
+            'A simple authentication service made using javascript, HTML, SASS for the frontend and Firebase'
           }
           language={'Javascript, HTML, SASS'}
           url={'https://github.com/Rohith-JN/JS-authentication'}
