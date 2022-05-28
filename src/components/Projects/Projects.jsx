@@ -72,9 +72,9 @@ function Projects() {
         <Work
           heading={'JS-authentication'}
           para={
-            'A simple authentication service made using javascript, HTML, SASS for the frontend and Firebase'
+            'A neumorphic design authentication service made using Firebase as the backend'
           }
-          language={'Javascript, HTML, SASS'}
+          language={'JS, HTML, CSS, Firebase'}
           url={'https://github.com/Rohith-JN/JS-authentication'}
           color="#e35f5f"
         />
