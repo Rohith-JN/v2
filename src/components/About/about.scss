@@ -25,18 +25,12 @@
         }
 
         .heading h1 {
-            cursor: pointer;
             font: 60px;
             color: #fff;
             text-transform: uppercase;
             letter-spacing: 6px;
             direction: ltr;
-            transition: 0.5s;
             user-select: none;
-        }
-
-        .heading h1:hover {
-            color: #08fdd8;
         }
 
         .para {

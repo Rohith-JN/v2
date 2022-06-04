@@ -58,13 +58,8 @@ function About() {
         </div>
         <div className="para">
           <p>
-            I am a high school student located in India, I am passionate about
-            UI designing, android development, web development and automation.
-          </p>
-          <br></br>
-          <p>
-            Love automating daily boring tasks using python, Linux OS, gaming
-            and in sports: football and badminton.
+            I am a high school student located in India, Passionate about UI
+            designing, android development, web development and automation.
           </p>
           <br></br>
           <p>
