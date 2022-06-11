@@ -52,7 +52,7 @@
     "@react-three/drei": "9.13.0",
     "@react-three/fiber": "8.0.19",
     "@types/three": "0.137.0",
-    "eslint": "^8.16.0",
+    "eslint": "^8.17.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.30.0",
