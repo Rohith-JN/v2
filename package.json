@@ -9,7 +9,7 @@
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^14.2.0",
     "aos": "^3.0.0-beta.6",
-    "async": "^3.2.3",
+    "async": "^3.2.4",
     "emailjs": "^4.0.0",
     "emailjs-com": "^3.2.0",
     "ityped": "^1.0.3",
