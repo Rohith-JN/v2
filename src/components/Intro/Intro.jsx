@@ -10,7 +10,7 @@ function Intro() {
     init(textRef.current, {
       showCursor: false,
       backDelay: 1500,
-      backSpeed: 60,
+      backSpeed: 80,
       strings: ['Student', 'Geek', 'Tech Enthusiast'],
     });
   }, []);

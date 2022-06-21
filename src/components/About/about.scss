@@ -48,6 +48,16 @@
             user-select: none;
         }
 
+        .para p span {
+            color: #08fdd8;
+            font-family: sans-serif;
+            font-size: 25px;
+            font-style: normal;
+            letter-spacing: 0.5px;
+            line-height: 35px;
+            user-select: none;
+        }
+
         .para p a {
             text-decoration: none;
             font-family: sans-serif;
@@ -64,6 +74,8 @@
         width: 50%;
         height: 100vh;
         display: flex;
+        align-items: center;
+        justify-content: center;
 
         .tagcloud--item {
             font-family: sans-serif;

@@ -7,28 +7,29 @@ import 'aos/dist/aos.css';
 AOS.init();
 
 function About() {
-  const Tags = [
-    'Python',
-    'Javascript',
-    'HTML',
-    'CSS',
-    'SASS',
-    'Dart',
-    'Flutter',
-    'React JS',
-    'Firebase',
-    'Azure',
-    'XD',
-    'Figma',
-    'Linux',
-    'JSON',
-    'git',
-    'Vscode',
-  ];
-
   const IsTagCloudLoaded = useRef(false);
 
   useEffect(() => {
+    const Tags = [
+      'Python',
+      'Javascript',
+      'HTML',
+      'CSS',
+      'Tailwind',
+      'SASS',
+      'Dart',
+      'Flutter',
+      'React JS',
+      'Firebase',
+      'Azure',
+      'XD',
+      'Figma',
+      'Linux',
+      'JSON',
+      'git',
+      'Vscode',
+    ];
+
     if (IsTagCloudLoaded.current) return;
 
     TagCloud('.content', Tags, {
@@ -41,6 +42,7 @@ function About() {
 
     IsTagCloudLoaded.current = true;
   }, []);
+
   return (
     <div className="About" id="About">
       <div
@@ -58,8 +60,7 @@ function About() {
         </div>
         <div className="para">
           <p>
-            I am a high school student located in India, Passionate about UI
-            designing, android development, web development and automation.
+            I am a high school student located in India, passionate about <span>UI designing</span>, <span>android development</span>, <span>web development</span> and <span>automation</span>.
           </p>
           <br></br>
           <p>
