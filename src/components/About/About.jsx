@@ -69,7 +69,7 @@ function About() {
         </div>
       </div>
       <div className="right">
-        <span className="content"></span>
+        <span className="content" onClick={(e) => window.open(`https://www.google.com/search?q=${e.target.innerText}`, '_blank')}></span>
       </div>
     </div>
   );
