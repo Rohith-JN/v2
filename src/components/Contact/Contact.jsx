@@ -10,7 +10,6 @@ import {
 } from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
 
-
 AOS.init();
 
 function Contact() {
@@ -49,19 +48,17 @@ function Contact() {
     <div className="Contact" id="Contact">
       <h1 className="section-header">Contact</h1>
       <div className="contact-form">
-        <form
-          role="form"
-          onSubmit={sendEmail}
-          ref={form}
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="900"
-          data-aos-easing="ease"
-          data-aos-mirror="false"
-          data-aos-once="true"
-        >
-          <div className="row-1">
+        <form role="form" onSubmit={sendEmail} ref={form}>
+          <div
+            className="row-1"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="900"
+            data-aos-easing="ease"
+            data-aos-mirror="false"
+            data-aos-once="true"
+          >
             <input
               type="text"
               autoComplete="off"
@@ -84,6 +81,13 @@ function Contact() {
           </div>
 
           <input
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="900"
+            data-aos-easing="ease"
+            data-aos-mirror="false"
+            data-aos-once="true"
             type="text"
             autoComplete="off"
             id="subject"
@@ -94,6 +98,13 @@ function Contact() {
           <br></br>
 
           <textarea
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="900"
+            data-aos-easing="ease"
+            data-aos-mirror="false"
+            data-aos-once="true"
             id="message"
             autoComplete="off"
             name="message"
@@ -101,7 +112,16 @@ function Contact() {
             spellCheck="false"
           ></textarea>
           <br></br>
-          <div className="form-button">
+          <div
+            className="form-button"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="900"
+            data-aos-easing="ease"
+            data-aos-mirror="false"
+            data-aos-once="true"
+          >
             <button type="submit" value="Submit" class="slide">
               Send Message!
             </button>
