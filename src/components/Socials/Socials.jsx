@@ -16,24 +16,11 @@ function Socials() {
           </a>
         </li>
         <li>
-          <a href="https://t.me/RohithJN" target="__blank">
-            <i className="fa fa-telegram"></i>
-          </a>
-        </li>
-        <li>
           <a
             href="https://www.linkedin.com/in/rohith-nambiar-496a52240/"
             target="__blank"
           >
             <i className="fa fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://stackoverflow.com/users/15747757/rohith-nambiar"
-            target="__blank"
-          >
-            <i className="fa fa-stack-overflow"></i>
           </a>
         </li>
       </div>

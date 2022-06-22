@@ -60,7 +60,15 @@ function About() {
         </div>
         <div className="para">
           <p>
-            I am a high school student located in India, passionate about <span>UI designing</span>, <span>android development</span>, <span>web development</span> and <span>automation</span>.
+            I am a high school student located in India, passionate about{' '}
+            <span>UI designing</span>, <span>android development</span>,{' '}
+            <span>web development</span> and <span>automation</span>.
+          </p>
+          <br></br>
+          <p>
+            I like to build interactive and minimal websites using{' '}
+            <span>React</span>, When I am not building something for the web, I
+            automate something using <span>Python</span>
           </p>
           <br></br>
           <p>
@@ -69,7 +77,15 @@ function About() {
         </div>
       </div>
       <div className="right">
-        <span className="content" onClick={(e) => window.open(`https://www.google.com/search?q=${e.target.innerText}`, '_blank')}></span>
+        <span
+          className="content"
+          onClick={(e) =>
+            window.open(
+              `https://www.google.com/search?q=${e.target.innerText}`,
+              '_blank'
+            )
+          }
+        ></span>
       </div>
     </div>
   );
