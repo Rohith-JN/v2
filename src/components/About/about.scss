@@ -132,6 +132,19 @@
     }
 }
 
+@media  screen and (max-width: 323px) {
+    .About {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 218px) {
+    .About {
+        padding-top: 50px;
+    }
+}
+
 @media screen and (max-width: 821px) and (max-height: 1181px) {
     .About {
         .left {
