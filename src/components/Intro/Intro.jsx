@@ -9,20 +9,33 @@ function Intro() {
   useEffect(() => {
     init(textRef.current, {
       showCursor: false,
-      backDelay: 1500,
+      backDelay: 1000,
       backSpeed: 80,
-      strings: ['Student', 'Geek', 'Tech Enthusiast'],
+      strings: ['student', 'geek', 'tech enthusiast'],
     });
   }, []);
 
   return (
     <div className="intro" id="Intro">
       <div className="heading">
+        <p>Hi, my name is</p>
         <p className="popout">
-          <h1>ROH I TH </h1>
-          <h1>NAMB I AR</h1>
+          <h1>Rohith J</h1>
+          <h1>Nambiar</h1>
         </p>
-        <span ref={textRef}></span>
+        <span>
+          I am a{' '}
+          <span
+            style={{ backgroundColor: 'white', color: 'black' }}
+            ref={textRef}
+          ></span>
+        </span>
+        <span>
+          Specialising in{' '}
+          <span style={{ backgroundColor: 'white', color: 'black' }}>
+            web development
+          </span>
+        </span>
       </div>
       <link rel="preconnect" href="https://fonts.gstatic.com"></link>
       <link

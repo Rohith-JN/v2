@@ -61,14 +61,14 @@ function About() {
         <div className="para">
           <p>
             I am a high school student located in India, passionate about{' '}
-            <span>UI designing</span>, <span>android development</span>,{' '}
+            <span>UI designing</span>,{' '}
             <span>web development</span> and <span>automation</span>.
           </p>
           <br></br>
           <p>
             I like to build interactive and minimal websites using{' '}
             <span>React</span>, When I am not building something for the web, I
-            automate something using <span>Python</span>
+            automate using <span>Python</span>
           </p>
           <br></br>
           <p>

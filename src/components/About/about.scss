@@ -43,9 +43,9 @@
         }
 
         .para p span {
-            color: #08fdd8;
+            color: white;
             font-family: sans-serif;
-            font-style: normal;
+            font-weight: 600;
             letter-spacing: 0.5px;
             line-height: 35px;
             user-select: none;
@@ -78,11 +78,6 @@
             transition: 0.5s;
             cursor: pointer;
         }
-
-        .tagcloud--item:hover {
-            color: #08fdd8;
-        }
-
     }
 }
 
