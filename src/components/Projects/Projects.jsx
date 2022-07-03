@@ -30,6 +30,7 @@ function Projects() {
           language={'Python'}
           url={'https://github.com/Rohith-JN/Categorize-CLI'}
           color="#e4cb58"
+          text={'View it on github'}
         />
         <Work
           heading={'Friday'}
@@ -39,6 +40,7 @@ function Projects() {
           language={'Python'}
           url={'https://github.com/Rohith-JN/Friday'}
           color="#e4cb58"
+          text={'View it on github'}
         />
         <Work
           heading={'Tasks'}
@@ -48,6 +50,7 @@ function Projects() {
           language={'Flutter, Dart'}
           url={'https://github.com/Rohith-JN/Tasks'}
           color="#58d8e4"
+          text={'View it on github'}
         />
       </div>
       <div
@@ -68,15 +71,15 @@ function Projects() {
           language={'Flutter, Dart'}
           url={'https://github.com/Rohith-JN/Clock'}
           color="#58d8e4"
+          text={'View it on github'}
         />
         <Work
-          heading={'JS-authentication'}
-          para={
-            'A neumorphic design authentication service made using Firebase as the backend'
-          }
-          language={'JS, HTML, CSS, Firebase'}
-          url={'https://github.com/Rohith-JN/JS-authentication'}
+          heading={'npm-search'}
+          para={'A site to view and compare npm-package stats'}
+          language={'Next JS, Tailwind CSS, TypeScript'}
           color="#e35f5f"
+          url={'http://npm-search-beige.vercel.app/'}
+          text={'Demo'}
         />
         <Work
           heading={'Portfolio website'}
@@ -86,6 +89,7 @@ function Projects() {
           language={'React JS'}
           url={'https://github.com/Rohith-JN/personal-site'}
           color="#e35f5f"
+          text={'View it on github'}
         />
       </div>
     </div>

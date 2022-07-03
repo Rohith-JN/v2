@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 AOS.init();
 
-function Work({ heading, para, language, url, color }) {
+function Work({ heading, para, language, url, color, text }) {
   return (
     <div className="Work" style={{ '--color': color }}>
       <div className="strip"></div>
@@ -15,7 +15,7 @@ function Work({ heading, para, language, url, color }) {
       <br></br>
       <p className="Language">Tech stack: {language}</p>
       <a href={url}>
-        <button class="raise">View it on github</button>
+        <button class="raise">{text}</button>
       </a>
     </div>
   );
