@@ -51,7 +51,7 @@
   "devDependencies": {
     "@react-three/drei": "9.13.0",
     "@react-three/fiber": "8.0.27",
-    "@types/three": "0.137.0",
+    "@types/three": "0.141.0",
     "eslint": "^8.18.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
