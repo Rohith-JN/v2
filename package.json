@@ -49,7 +49,7 @@
     ]
   },
   "devDependencies": {
-    "@react-three/drei": "9.13.0",
+    "@react-three/drei": "9.17.0",
     "@react-three/fiber": "8.0.27",
     "@types/three": "0.137.0",
     "eslint": "^8.18.0",
