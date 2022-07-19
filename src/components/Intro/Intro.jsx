@@ -1,7 +1,6 @@
 import './intro.scss';
 import { init } from 'ityped';
 import React, { useEffect, useRef } from 'react';
-import Socials from '../Socials/Socials';
 
 function Intro() {
   const textRef = useRef();
@@ -11,7 +10,7 @@ function Intro() {
       showCursor: false,
       backDelay: 1000,
       backSpeed: 80,
-      strings: ['student', 'geek', 'tech enthusiast'],
+      strings: ['student', 'tech enthusiast', 'junior developer'],
     });
   }, []);
 
@@ -25,16 +24,11 @@ function Intro() {
         </p>
         <span>
           I am a{' '}
-          <span
-            style={{ backgroundColor: 'white', color: 'black' }}
-            ref={textRef}
-          ></span>
+          <span style={{ textDecoration: 'underline' }} ref={textRef}></span>
         </span>
         <span>
           Specialising in{' '}
-          <span style={{ backgroundColor: 'white', color: 'black' }}>
-            web development
-          </span>
+          <span style={{ textDecoration: 'underline' }}>web development</span>
         </span>
       </div>
       <link rel="preconnect" href="https://fonts.gstatic.com"></link>
@@ -46,7 +40,6 @@ function Intro() {
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         rel="stylesheet"
       ></link>
-      <Socials />
       <div className="scroll">
         <p>Scroll down</p>
         <i class="arrow down"></i>

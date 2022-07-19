@@ -67,7 +67,7 @@ function About() {
           <br></br>
           <p>
             I like to build interactive and minimal websites using{' '}
-            <span>React</span>, When I am not building something for the web, I
+            <span>React.js</span>, When I am not building something for the web, I
             automate using <span>Python</span>
           </p>
           <br></br>
