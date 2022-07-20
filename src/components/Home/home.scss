@@ -8,7 +8,7 @@
     }
 }
 
-.intro {
+.Home {
     height: 100vh;
     max-width: 100%;
 
@@ -94,7 +94,7 @@
 }
 
 @media screen and (max-width: 880px) {
-    .intro {
+    .Home {
         .heading {
             padding-left: 20px;
 
@@ -113,7 +113,7 @@
 }
 
 @media screen and (max-width: 573px) {
-    .intro {
+    .Home {
         .heading {
             .popout {
                 width: 300px;
@@ -130,7 +130,7 @@
 }
 
 @media screen and (max-width: 401px) {
-    .intro {
+    .Home {
         .scroll {
             display: none;
         }
@@ -148,7 +148,7 @@
 }
 
 @media screen and (max-width: 351px) {
-    .intro {
+    .Home {
         .heading {
             .popout {
                 h1 {

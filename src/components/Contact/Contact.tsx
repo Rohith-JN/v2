@@ -12,18 +12,18 @@ import 'react-notifications/lib/notifications.css';
 
 AOS.init();
 
-function Contact() {
-  const form = useRef();
+const Contact = () => {
+  const form: any = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        process.env.REACT_APP_SERVICE_ID ? process.env.REACT_APP_SERVICE_ID : '',
+        process.env.REACT_APP_TEMPLATE_ID ? process.env.REACT_APP_TEMPLATE_ID : '',
         form.current,
-        process.env.REACT_APP_USER_ID
+        process.env.REACT_APP_USER_ID ? process.env.REACT_APP_USER_ID : ''
       )
       .then(
         (result) => {
@@ -45,7 +45,7 @@ function Contact() {
   };
 
   return (
-    <div className="Contact" id="Contact">
+    <div className="Contact">
       <h1 className="section-header">Contact</h1>
       <div className="contact-form">
         <form
@@ -101,7 +101,7 @@ function Contact() {
           ></textarea>
           <br></br>
           <div className="form-button">
-            <button type="submit" value="Submit" class="slide">
+            <button type="submit" value="Submit" className="slide">
               Send Message!
             </button>
           </div>

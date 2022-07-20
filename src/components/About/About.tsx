@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 AOS.init();
 
-function About() {
+const About = () => {
   const IsTagCloudLoaded = useRef(false);
 
   useEffect(() => {
@@ -44,7 +44,7 @@ function About() {
   }, []);
 
   return (
-    <div className="About" id="About">
+    <div className="About">
       <div
         className="left"
         data-aos="fade-right"
@@ -71,9 +71,6 @@ function About() {
             automate using <span>Python</span>
           </p>
           <br></br>
-          <p>
-            <a href="#Contact">Contact me</a>
-          </p>
         </div>
       </div>
       <div className="right">
@@ -81,7 +78,7 @@ function About() {
           className="content"
           onClick={(e) =>
             window.open(
-              `https://www.google.com/search?q=${e.target.innerText}`,
+              `https://www.google.com/search?q=${e.currentTarget.innerText}`,
               '_blank'
             )
           }

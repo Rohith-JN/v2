@@ -1,11 +1,11 @@
 import Topbar from './components/Topbar/Topbar';
-import Intro from './components/Intro/Intro';
+import Intro from './components/Home/Home';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
-import './app.scss';
+import './App.scss';
 import React, { useEffect } from 'react';
-import Load from './components/Loading-screen/Load';
+import Load from './components/Loading-screen/Loader';
 import DocumentMeta from 'react-document-meta';
 
 export default function App() {
@@ -36,9 +36,6 @@ export default function App() {
   return (
     <DocumentMeta {...meta}>
       <div>
-        {isLoading ? (
-          <Load />
-        ) : (
           <div className="app">
             <Topbar />
             <div className="parts">
@@ -48,7 +45,6 @@ export default function App() {
               <Contact />
             </div>
           </div>
-        )}
       </div>
     </DocumentMeta>
   );

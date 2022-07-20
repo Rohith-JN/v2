@@ -1,6 +1,9 @@
 import './topbar.scss';
+import { useRef } from 'react';
 
-function Topbar() {
+const Topbar = () => {
+  const checkboxes: any = useRef()
+
   const timeout = () => {
     setTimeout(() => {
       if (window.location.pathname === '/') {
@@ -9,9 +12,8 @@ function Topbar() {
     }, 600);
   };
 
-  function check(checked = true) {
-    const checkboxes = document.querySelectorAll('input.checkbox');
-    checkboxes.forEach((checkbox) => {
+  function check(checked:boolean = true) {
+    checkboxes.forEach((checkbox: { checked: boolean; }) => {
       checkbox.checked = checked;
     });
   }
@@ -19,6 +21,7 @@ function Topbar() {
   function uncheckAll() {
     check(false);
   }
+
   return (
     <div className="nav">
       <div className="navbar">
@@ -57,7 +60,7 @@ function Topbar() {
       </div>
       <div className="nav-menu">
         <div id="menuToggle">
-          <input type="checkbox" className="checkbox" />
+          <input type="checkbox" className="checkbox" ref = {checkboxes}/>
           <span></span>
           <span></span>
           <span></span>

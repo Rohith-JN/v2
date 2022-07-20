@@ -1,7 +1,6 @@
-import React from "react";
-import "./load.scss";
+import "./loader.scss";
 
-function Load() {
+const Loader = () => {
   return (
     <div className="load">
       <div className="loader">
@@ -13,4 +12,4 @@ function Load() {
   );
 }
 
-export default Load;
+export default Loader;

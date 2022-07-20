@@ -1,14 +1,13 @@
-import React from 'react';
 import './projects.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Work from '../Work/Work';
+import Project from '../Project/Project';
 
 AOS.init();
 
-function Projects() {
+const Projects = () => {
   return (
-    <div className="Projects" id="Projects">
+    <div className="Projects">
       <div className="heading">
         <h1>PROJECTS</h1>
       </div>
@@ -22,7 +21,7 @@ function Projects() {
         data-aos-mirror="false"
         data-aos-once="true"
       >
-        <Work
+        <Project
           heading={'Categorize-CLI'}
           para={
             'A command-line-tool made to help you categorize/organize files in a given directory'
@@ -32,7 +31,7 @@ function Projects() {
           color="#e4cb58"
           text={'View it on github'}
         />
-        <Work
+        <Project
           heading={'Friday'}
           para={
             'A simple personal assistant to automate Windows made using Python'
@@ -42,7 +41,7 @@ function Projects() {
           color="#e4cb58"
           text={'View it on github'}
         />
-        <Work
+        <Project
           heading={'Tasks'}
           para={
             'A simple todo/reminders app made using Flutter, Getx for state management and get_storage'
@@ -63,7 +62,7 @@ function Projects() {
         data-aos-mirror="false"
         data-aos-once="true"
       >
-        <Work
+        <Project
           heading={'Clock'}
           para={
             'A minimal clock app made using Flutter inspired by the clock app in Google pixels'
@@ -73,7 +72,7 @@ function Projects() {
           color="#58d8e4"
           text={'View it on github'}
         />
-        <Work
+        <Project
           heading={'npm-search'}
           para={'A site to view and compare npm-package stats'}
           language={'Next JS, Tailwind CSS, TypeScript'}
@@ -81,7 +80,7 @@ function Projects() {
           url={'http://npm-search-beige.vercel.app/'}
           text={'Demo'}
         />
-        <Work
+        <Project
           heading={'Portfolio website'}
           para={
             'Since this felt like a project I put a lot of effort in, I decided to put it here!'
