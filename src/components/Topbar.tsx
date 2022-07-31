@@ -1,4 +1,4 @@
-import './topbar.scss';
+import '../styles/topbar.scss';
 import { useRef } from 'react';
 
 const Topbar = () => {
@@ -30,7 +30,7 @@ const Topbar = () => {
           <div className="spacer"></div>
           <div className="item">
             <span>
-              <a href="#Intro" className="link">
+              <a href="#Home" className="link">
                 HOME
               </a>
             </span>

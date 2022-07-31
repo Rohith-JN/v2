@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import TagCloud from 'TagCloud';
-import './about.scss';
+import '../styles/about.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -12,22 +12,19 @@ const About = () => {
   useEffect(() => {
     const Tags = [
       'Python',
-      'Javascript',
-      'HTML',
-      'CSS',
+      'JavaScript',
+      'TypeScript',
+      'Dart',
       'Tailwind',
       'SASS',
-      'Dart',
       'Flutter',
-      'React JS',
+      'React.js',
+      'Next.js',
       'Firebase',
-      'Azure',
       'XD',
-      'Figma',
       'Linux',
       'JSON',
-      'git',
-      'Vscode',
+      'git'
     ];
 
     if (IsTagCloudLoaded.current) return;
@@ -44,7 +41,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="About">
+    <div className="About" id="About">
       <div
         className="left"
         data-aos="fade-right"
@@ -76,9 +73,9 @@ const About = () => {
       <div className="right">
         <span
           className="content"
-          onClick={(e) =>
+          onClick={(e: any) =>
             window.open(
-              `https://www.google.com/search?q=${e.currentTarget.innerText}`,
+              `https://www.google.com/search?q=${e.target.innerText}`,
               '_blank'
             )
           }

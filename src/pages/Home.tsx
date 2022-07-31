@@ -1,8 +1,10 @@
-import './home.scss';
+import Socials from '../components/Socials';
+import '../styles/home.scss';
 
 const Home = () => {
+
   return (
-    <div className="Home">
+    <div className="Home" id="Home">
       <div className="heading">
         <p>Hi, my name is</p>
         <p className="popout">
@@ -18,6 +20,7 @@ const Home = () => {
           <span style={{ textDecoration: 'underline' }}>web development</span>
         </span>
       </div>
+      <Socials />
       <div className="scroll">
         <p>Scroll down</p>
         <i className="arrow down"></i>

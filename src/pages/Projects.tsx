@@ -1,13 +1,13 @@
-import './projects.scss';
+import '../styles/projects.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Project from '../Project/Project';
+import Project from '../components/Project';
 
 AOS.init();
 
 const Projects = () => {
   return (
-    <div className="Projects">
+    <div className="Projects" id="Projects">
       <div className="heading">
         <h1>PROJECTS</h1>
       </div>

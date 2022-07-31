@@ -1,12 +1,10 @@
-import Topbar from './components/Topbar/Topbar';
-import Intro from './components/Home/Home';
-import Projects from './components/Projects/Projects';
-import Contact from './components/Contact/Contact';
-import About from './components/About/About';
+import Topbar from './components/Topbar';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import About from './pages/About';
 import './App.scss';
 import React, { useEffect } from 'react';
-import Load from './components/Loading-screen/Loader';
-import DocumentMeta from 'react-document-meta';
 
 export default function App() {
   const [isLoading, setIsLoading] = React.useState(true);
@@ -20,32 +18,17 @@ export default function App() {
     return () => window.removeEventListener('load', handleLoading);
   }, []);
 
-  const meta = {
-    title: 'Rohith J Nambiar',
-    description:
-      'Hi I am Rohith Nambiar a junior developer aspiring to be a full-stack web developer, specializing in React.js, Python, APIs',
-    canonical: 'https://rohithnambiar.in/',
-    meta: {
-      charset: 'utf-8',
-      name: {
-        keywords: 'portfolio, about, projects, contact',
-      },
-    },
-  };
-
   return (
-    <DocumentMeta {...meta}>
       <div>
           <div className="app">
             <Topbar />
             <div className="parts">
-              <Intro />
+              <Home />
               <About />
               <Projects />
               <Contact />
             </div>
           </div>
       </div>
-    </DocumentMeta>
   );
 }
