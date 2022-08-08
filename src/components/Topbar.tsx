@@ -66,7 +66,7 @@ const Topbar = () => {
           <span></span>
           <ul id="menu">
             <li>
-              <a href="#Intro" className="link" onClick={timeout}>
+              <a href="#Home" className="link" onClick={timeout}>
                 Home
               </a>
             </li>
