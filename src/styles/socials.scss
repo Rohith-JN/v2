@@ -94,3 +94,43 @@
         }
     }
 }
+@media screen and (max-width: 520px) {
+
+    .main-menu {
+        position: absolute;
+        width: 100%;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .social-menu {
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        display: inline-flex;
+        animation: moveUp ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        gap: 15px;
+        padding-left: 8px;
+    }
+
+    .social-menu li {
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .social-menu li a:hover {
+        transform: translate(0px, -10px);
+    }
+
+    @keyframes moveUp {
+        0% {
+            transform: translateY(150px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+}

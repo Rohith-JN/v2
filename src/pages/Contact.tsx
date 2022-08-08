@@ -48,7 +48,6 @@ const Contact = () => {
     <div className="Contact" id="Contact">
       <h1 className="section-header">Contact</h1>
       <div className="main">
-        <div className="left">
           <div className="contact-form">
             <form
               role="form"
@@ -109,7 +108,6 @@ const Contact = () => {
               </div>
             </form>
           </div>
-        </div>
       </div>
       <NotificationContainer />
     </div>
