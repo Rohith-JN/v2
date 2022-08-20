@@ -59,7 +59,7 @@
     "@types/react-document-meta": "^3.0.2",
     "@types/three": "0.143.0",
     "gh-pages": "^4.0.0",
-    "sass": "^1.54.3",
+    "sass": "^1.54.5",
     "TagCloud": "^2.2.0",
     "three": "^0.143.0"
   }
