@@ -57,10 +57,10 @@
     "@react-three/fiber": "8.6.2",
     "@types/aos": "^3.0.4",
     "@types/react-document-meta": "^3.0.2",
-    "@types/three": "0.143.0",
+    "@types/three": "0.144.0",
     "gh-pages": "^4.0.0",
     "sass": "^1.54.8",
     "TagCloud": "^2.2.0",
-    "three": "^0.143.0"
+    "three": "^0.144.0"
   }
 }
