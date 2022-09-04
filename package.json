@@ -23,7 +23,7 @@
     "react-notifications": "^1.7.4",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.7.4",
+    "typescript": "^4.8.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "@react-three/drei": "9.17.0",
-    "@react-three/fiber": "8.3.0",
+    "@react-three/fiber": "8.6.2",
     "@types/aos": "^3.0.4",
     "@types/react-document-meta": "^3.0.2",
     "@types/three": "0.143.0",
