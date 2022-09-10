@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "@react-three/drei": "9.17.0",
-    "@react-three/fiber": "8.6.2",
+    "@react-three/fiber": "8.7.2",
     "@types/aos": "^3.0.4",
     "@types/react-document-meta": "^3.0.2",
     "@types/three": "0.144.0",
