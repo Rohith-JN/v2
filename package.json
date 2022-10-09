@@ -6,10 +6,10 @@
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.3.0",
+    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^29.0.0",
-    "@types/node": "^18.7.14",
+    "@types/node": "^18.8.3",
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
     "aos": "^3.0.0-beta.6",
@@ -21,10 +21,10 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-notifications": "^1.7.4",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "typescript": "^4.7.4",
-    "web-vitals": "^3.0.1"
+    "web-vitals": "^3.0.3"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -53,14 +53,14 @@
     ]
   },
   "devDependencies": {
-    "@react-three/drei": "9.17.0",
+    "@react-three/drei": "9.34.3",
     "@react-three/fiber": "8.6.2",
     "@types/aos": "^3.0.4",
     "@types/react-document-meta": "^3.0.2",
     "@types/three": "0.144.0",
     "gh-pages": "^4.0.0",
-    "sass": "^1.54.8",
+    "sass": "^1.55.0",
     "TagCloud": "^2.2.0",
-    "three": "^0.144.0"
+    "three": "^0.145.0"
   }
 }
