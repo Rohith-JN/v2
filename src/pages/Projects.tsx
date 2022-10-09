@@ -44,9 +44,9 @@ const Projects = () => {
         <Project
           heading={'Tasks'}
           para={
-            'A simple todo/reminders app made using Flutter, Getx for state management and get_storage'
+            'A simple todo/reminders app made using Flutter'
           }
-          language={'Flutter, Dart'}
+          language={'Flutter, Dart, Firebase Auth, Firestore'}
           url={'https://github.com/Rohith-JN/Tasks'}
           color="#58d8e4"
           text={'View it on github'}
@@ -63,16 +63,6 @@ const Projects = () => {
         data-aos-once="true"
       >
         <Project
-          heading={'Clock'}
-          para={
-            'A minimal clock app made using Flutter inspired by the clock app in Google pixels'
-          }
-          language={'Flutter, Dart'}
-          url={'https://github.com/Rohith-JN/Clock'}
-          color="#58d8e4"
-          text={'View it on github'}
-        />
-        <Project
           heading={'npm-search'}
           para={'A site to view and compare npm-package stats'}
           language={'Next JS, Tailwind CSS, TypeScript'}
@@ -85,7 +75,7 @@ const Projects = () => {
           para={
             'Since this felt like a project I put a lot of effort in, I decided to put it here!'
           }
-          language={'React JS'}
+          language={'React JS, TypeScript'}
           url={'https://github.com/Rohith-JN/personal-site'}
           color="#e35f5f"
           text={'View it on github'}
