@@ -27,14 +27,12 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
           NotificationManager.success(
             'Thank you for contacting me',
             'Message sent!'
           );
         },
         (error) => {
-          console.log(error.text);
           NotificationManager.error(
             'Please try again later',
             'Message could not be sent!'

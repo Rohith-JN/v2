@@ -42,12 +42,12 @@ const Projects = () => {
           text={'View it on github'}
         />
         <Project
-          heading={'Tasks'}
+          heading={'Tasks-Android'}
           para={
-            'A simple todo/reminders app made using Flutter'
+            'A minimal todo app made using Flutter for Android'
           }
-          language={'Flutter, Dart, Firebase Auth, Firestore'}
-          url={'https://github.com/Rohith-JN/Tasks'}
+          language={'Flutter, Dart, Firebase Auth, Firestore, GetX'}
+          url={'https://github.com/Rohith-JN/Tasks-Android'}
           color="#58d8e4"
           text={'View it on github'}
         />
@@ -62,6 +62,16 @@ const Projects = () => {
         data-aos-mirror="false"
         data-aos-once="true"
       >
+        <Project
+          heading={'Tasks-iOS'}
+          para={
+            'A minimal todo app made using Flutter for iOS'
+          }
+          language={'Flutter, Dart, Firebase Auth, Firestore, GetX'}
+          url={'https://github.com/Rohith-JN/Tasks-iOS'}
+          color="#58d8e4"
+          text={'View it on github'}
+        />
         <Project
           heading={'npm-search'}
           para={'A site to view and compare npm-package stats'}
