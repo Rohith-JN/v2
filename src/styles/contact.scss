@@ -9,7 +9,7 @@
     max-width: 100%;
     .main {
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
         align-items: center;
         justify-content: space-around;
     }
@@ -22,7 +22,8 @@
         text-align: center;
         margin: 0 auto;
         padding: 40px 0;
-        font: 300 60px;
+        font: 300 45px;
+        font-family: sans-serif;
         color: #fff;
         text-transform: uppercase;
         letter-spacing: 6px;
@@ -96,7 +97,7 @@
         input:focus {
             outline: none;
             border-bottom: 2px solid #58d8e4;
-        
+
         }
     }
 

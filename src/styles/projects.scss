@@ -12,7 +12,8 @@
         text-align: center;
         margin: 0 auto;
         padding-top: 40px;
-        font: 300 60px;
+        font: 300 45px;
+        font-family: sans-serif;
         color: #fff;
         text-transform: uppercase;
         letter-spacing: 6px;
@@ -35,6 +36,10 @@
         gap: 50px;
         padding-bottom: 5px;
     }
+    .row-3 {
+        gap: 50px;
+        padding-bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -47,6 +52,9 @@
         }
 
         .row-2 {
+            flex-direction: column;
+        }
+        .row-3 {
             flex-direction: column;
         }
     }

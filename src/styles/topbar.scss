@@ -42,6 +42,11 @@
   left: 20px;
 }
 
+a.link {
+    font-family: sans-serif;
+    letter-spacing: 3px;
+}
+
 .menu:hover {
   pointer-events: all;
 }
@@ -51,6 +56,8 @@
   cursor: pointer;
   pointer-events: all;
   user-select: none;
+  font-family: sans-serif;
+  letter-spacing: 3px;
 }
 
 .spacer {

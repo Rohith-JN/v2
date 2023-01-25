@@ -1,11 +1,4 @@
-@font-face {
-  font-family: "Anurati-Regular";
-  src: local("Anurati-Regular"),
-  url("./fonts/Anurati-Regular.otf") format("opentype");
-}
-
 * {
   margin: 0;
-  font-family: 'Anurati-Regular';
   font-weight: lighter;
 }
