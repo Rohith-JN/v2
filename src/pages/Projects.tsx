@@ -91,6 +91,28 @@ const Projects = () => {
           text={'View it on github'}
         />
       </div>
+      <div className="heading">
+        <h1>Tools</h1>
+      </div>
+      <div className="row-3"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease"
+        data-aos-mirror="false"
+        data-aos-once="true">
+        <Project
+          heading={'Nvim-config'}
+          para={
+            'Here is my neovim config written in lua for react, python, lua..............'
+          }
+          language={'Lua'}
+          url={'https://github.com/Rohith-JN/nvim-config'}
+          color="#00FF00"
+          text={'View it on github'}
+        />
+      </div>
     </div>
   );
 }

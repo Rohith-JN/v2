@@ -45,7 +45,7 @@ const Topbar = () => {
           <div className="item">
             <span>
               <a href="#Projects" className="link">
-                PROJECTS
+                PROJECTS & TOOLS
               </a>
             </span>
           </div>
@@ -77,7 +77,7 @@ const Topbar = () => {
             </li>
             <li>
               <a href="#Projects" className="link" onClick={timeout}>
-                Projects
+               Projects & Tools
               </a>
             </li>
             <li>

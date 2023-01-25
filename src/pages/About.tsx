@@ -22,9 +22,11 @@ const About = () => {
       'Next.js',
       'Firebase',
       'XD',
-      'Linux',
+      'Arch Linux',
       'JSON',
-      'git'
+      'git',
+      'Nvim',
+      'Lua'
     ];
 
     if (IsTagCloudLoaded.current) return;
