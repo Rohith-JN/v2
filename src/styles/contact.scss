@@ -4,6 +4,7 @@
 
 .Contact {
     scroll-snap-align: start;
+    background-color: rgb(20, 20, 20);
     height: 100vh;
     max-height: 100vh;
     max-width: 100%;
@@ -61,8 +62,8 @@
             padding-right: 15px;
             font-family: sans-serif;
             font-size: 17px;
-            margin-top: 15px;
-            background-color: #2d2c2c;
+            margin-top: 10px;
+            background-color: rgb(23, 23, 23);
             border: none;
             color: rgb(201, 195, 195);
             -webkit-box-sizing: border-box;
@@ -78,8 +79,8 @@
             padding-left: 15px;
             padding-right: 15px;
             font-family: sans-serif;
-            margin-top: 15px;
-            background-color: #2d2c2c;
+            margin-top: 10px;
+            background-color: rgb(23, 23, 23);
             border: none;
             font-size: 17px;
             padding-top: 10px;

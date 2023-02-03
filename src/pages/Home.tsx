@@ -21,10 +21,6 @@ const Home = () => {
         </span>
       </div>
       <Socials />
-      <div className="scroll">
-        <p>Scroll down</p>
-        <i className="arrow down"></i>
-      </div>
     </div>
   );
 }

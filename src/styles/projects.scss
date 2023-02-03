@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 10px;
 
     .heading h1 {
         text-align: center;
@@ -20,12 +20,12 @@
     }
 
     .row-1 {
-        padding-top: 10px;
+        padding-top: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        gap: 50px;
+        gap: 10px;
     }
 
     .row-2 {
@@ -33,12 +33,8 @@
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        gap: 50px;
+        gap: 10px;
         padding-bottom: 5px;
-    }
-    .row-3 {
-        gap: 50px;
-        padding-bottom: 50px;
     }
 }
 
@@ -52,9 +48,6 @@
         }
 
         .row-2 {
-            flex-direction: column;
-        }
-        .row-3 {
             flex-direction: column;
         }
     }

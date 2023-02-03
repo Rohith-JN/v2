@@ -11,6 +11,7 @@
 .Home {
     height: 100vh;
     max-width: 100%;
+    background-color: rgb(20, 20, 20);
 
     .heading {
         height: 90%;
@@ -47,46 +48,6 @@
             color: rgb(171, 166, 166);
             font-size: 25px;
             user-select: none;
-        }
-    }
-    .scroll {
-        position: absolute;
-        left: 15px;
-        animation: MoveUpDown 1s linear infinite;
-        padding-bottom: 10px;
-
-        p {
-            color: white;
-            font-family: sans-serif;
-            transform: rotate(90deg);
-            position: relative;
-            bottom: 35px;
-            right: 35.5px;
-        }
-
-        .arrow {
-            border: solid white;
-            border-width: 0 3px 3px 0;
-            display: inline-block;
-            padding: 3px;
-
-        }
-
-        .down {
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-        }
-
-        @keyframes MoveUpDown {
-
-            0%,
-            100% {
-                bottom: 0;
-            }
-
-            50% {
-                bottom: 30px;
-            }
         }
     }
 }
@@ -129,10 +90,6 @@
 
 @media screen and (max-width: 401px) {
     .Home {
-        .scroll {
-            display: none;
-        }
-
         @keyframes moveUp {
             0% {
                 transform: translateY(150px);

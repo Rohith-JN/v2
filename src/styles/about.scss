@@ -1,9 +1,9 @@
 .About {
     scroll-snap-align: start;
-    max-height: 100vh;
     max-width: 100%;
     display: flex;
     flex-direction: row;
+    background-color: rgb(20, 20, 20);
 
     .left {
         width: 50%;
@@ -83,6 +83,7 @@
 
 @media screen and (max-width: 1281px) {
     .About {
+        flex-direction: column;
         .left {
             width: 100%;
             align-items: center;
@@ -90,7 +91,9 @@
         }
 
         .right {
-            display: none;
+            height: 70vh;
+            width: 100%;
+            padding-bottom: 100px;
         }
     }
 }
@@ -106,9 +109,36 @@
                 font-size: 20px;
             }
         }
+
+        .right {
+            align-items: center;
+            justify-content: center;
+            width: full;
+            padding-bottom: 100px;
+            .tagcloud--item {
+                margin: left;
+                font-size: 20px;
+            }
+        }
     }
 }
-
+@media screen and (max-width: 700px) {
+    .About {
+        .right {
+            width: 90%;
+            .tagcloud--item {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 643px) {
+    .About {
+        .right {
+            display: none;
+        }
+    }
+}
 @media screen and (max-width: 500px) {
     .About {
         .left {

@@ -22,7 +22,7 @@ const About = () => {
       'Next.js',
       'Firebase',
       'XD',
-      'Arch Linux',
+      'Linux',
       'JSON',
       'git',
       'Nvim',
