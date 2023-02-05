@@ -2,8 +2,8 @@
     --bg-color: rgb(20, 20, 20);
     --card-color: rgb(23, 23, 23);
   }
-  
-  .Projects2 {
+
+  .Projects {
     align-items: center;
     background-color: var(--bg-color);
     display: flex;
@@ -11,9 +11,8 @@
     justify-content: center;
     margin: 0px;
     padding: 0px;
-    padding-bottom: 100px;
   }
-  
+
   #cards {
     display: flex;
     flex-wrap: wrap;
@@ -21,11 +20,11 @@
     max-width: 916px;
     width: calc(100% - 20px);
   }
-  
+
   #cards:hover > .card::after {
     opacity: 1;
   }
-  
+
   .card {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -36,11 +35,11 @@
     position: relative;
     width: 300px;  
   }
-  
+
   .card:hover::before {
     opacity: 1;
   }
-  
+
   .card::before,
   .card::after {
     border-radius: inherit;

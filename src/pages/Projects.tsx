@@ -1,98 +1,134 @@
-import '../styles/projects.scss';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Project from '../components/Project';
-
-AOS.init();
+import '../styles/projects.css';
+import { useEffect, useRef } from 'react';
 
 const Projects = () => {
-  return (
-    <div className="Projects" id="Projects">
-      <div className="heading">
-        <h1>PROJECTS</h1>
-      </div>
-      <div
-        className="row-1"
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease"
-        data-aos-mirror="false"
-        data-aos-once="true"
-      >
-        <Project
-          heading={'Categorize-CLI'}
-          para={
-            'A command-line-tool made to help you categorize/organize files in a given directory'
-          }
-          language={'Python'}
-          url={'https://github.com/Rohith-JN/Categorize-CLI'}
-          color="#e4cb58"
-          text={'View it on github'}
-        />
-        <Project
-          heading={'Friday'}
-          para={
-            'A simple personal assistant to automate Windows made using Python'
-          }
-          language={'Python'}
-          url={'https://github.com/Rohith-JN/Friday'}
-          color="#e4cb58"
-          text={'View it on github'}
-        />
-        <Project
-          heading={'Tasks-Android'}
-          para={
-            'A minimal todo app made using Flutter for Android'
-          }
-          language={'Flutter, Dart, Firebase Auth, Firestore, GetX'}
-          url={'https://github.com/Rohith-JN/Tasks-Android'}
-          color="#58d8e4"
-          text={'View it on github'}
-        />
-      </div>
-      <div
-        className="row-2"
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease"
-        data-aos-mirror="false"
-        data-aos-once="true"
-      >
-        <Project
-          heading={'Tasks-iOS'}
-          para={
-            'A minimal todo app made using Flutter for iOS'
-          }
-          language={'Flutter, Dart, Firebase Auth, Firestore, GetX'}
-          url={'https://github.com/Rohith-JN/Tasks-iOS'}
-          color="#58d8e4"
-          text={'View it on github'}
-        />
-        <Project
-          heading={'npm-search'}
-          para={'A site to view and compare npm-package stats'}
-          language={'Next JS, Tailwind CSS, TypeScript'}
-          color="#e35f5f"
-          url={'http://npm-search-beige.vercel.app/'}
-          text={'Demo'}
-        />
-        <Project
-          heading={'Portfolio website'}
-          para={
-            'Since this felt like a project I put a lot of effort in, I decided to put it here!'
-          }
-          language={'React JS, TypeScript'}
-          url={'https://github.com/Rohith-JN/personal-site'}
-          color="#e35f5f"
-          text={'View it on github'}
-        />
-      </div>
-    </div>
-  );
+    const containerRef: any = useRef(null);
+
+    useEffect(() => {
+        const handleMouseMove = (e: any) => {
+            const cards = containerRef.current.getElementsByClassName("card");
+            Array.from(cards).forEach((card: any) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                card.style.setProperty("--mouse-x", `${x}px`);
+                card.style.setProperty("--mouse-y", `${y}px`);
+            });
+        };
+
+        containerRef.current.addEventListener("mousemove", handleMouseMove);
+
+        return () => {
+            containerRef.current.removeEventListener("mousemove", handleMouseMove);
+        };
+    }, []);
+
+    return (
+        <div className='Projects' id="Projects">
+            <div id="cards" ref={containerRef}>
+                <div className="card">
+                    <div className="card-content">
+                        <div className="card-info-wrapper">
+                            <div className="card-info-title">
+                                <div className="card-info-title">
+                                    <h3>Categorize-CLI</h3>
+                                    <h4>A command-line-tool made to help you categorize/organize files in a given directory</h4>
+                                </div>
+                            </div></div>
+                        <div className="card-info-wrapper">
+                            <div className="card-info">
+                                <div className="card-info-title">
+                                    <h3>Tech stack</h3>
+                                    <h4>Python</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-content">
+                        <div className="card-image">
+                            <i className="fa-duotone fa-unicorn"></i>
+                        </div>
+                        <div className="card-info-wrapper">
+                            <div className="card-info">
+                                <i className="fa-duotone fa-unicorn"></i>
+                                <div className="card-info-title">
+                                    <h3>Unicorns</h3>
+                                    <h4>A single corn. Er, I mean horn.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-content">
+                        <div className="card-image">
+                            <i className="fa-duotone fa-blender-phone"></i>
+                        </div>
+                        <div className="card-info-wrapper">
+                            <div className="card-info">
+                                <i className="fa-duotone fa-blender-phone"></i>
+                                <div className="card-info-title">
+                                    <h3>Blender Phones</h3>
+                                    <h4>These absolutely deserve to exist.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-content">
+                        <div className="card-image">
+                            <i className="fa-duotone fa-person-to-portal"></i>
+                        </div>
+                        <div className="card-info-wrapper">
+                            <div className="card-info">
+                                <i className="fa-duotone fa-person-to-portal"></i>
+                                <div className="card-info-title">
+                                    <h3>Adios</h3>
+                                    <h4>See you...</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-content">
+                        <div className="card-image">
+                            <i className="fa-duotone fa-person-from-portal"></i>
+                        </div>
+                        <div className="card-info-wrapper">
+                            <div className="card-info">
+                                <i className="fa-duotone fa-person-from-portal"></i>
+                                <div className="card-info-title">
+                                    <h3>I mean hello</h3>
+                                    <h4>...over here.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-content">
+                        <div className="card-image">
+                            <i className="fa-duotone fa-otter"></i>
+                        </div>
+                        <div className="card-info-wrapper">
+                            <div className="card-info">
+                                <i className="fa-duotone fa-otter"></i>
+                                <div className="card-info-title">
+                                    <h3>Otters</h3>
+                                    <h4>Look at me, imma cute lil fella.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default Projects;
