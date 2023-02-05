@@ -53,7 +53,6 @@
                 width: 100%;
                 max-width: 100%;
                 height: 50px;
-                box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
             }
         }
 
@@ -72,7 +71,6 @@
             width: 100%;
             max-width: 100%;
             height: 50px;
-            box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
         }
 
         textarea {
@@ -91,14 +89,11 @@
             max-width: 100%;
             resize: none;
             box-sizing: border-box;
-            box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
         }
 
         textarea:focus,
         input:focus {
             outline: none;
-            border-bottom: 2px solid #58d8e4;
-
         }
     }
 

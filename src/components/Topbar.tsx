@@ -1,5 +1,6 @@
 import '../styles/topbar.scss';
 import { useRef } from 'react';
+import { Outlet, Link } from "react-router-dom";
 
 const Topbar = () => {
   const checkboxes: any = useRef()
@@ -29,31 +30,26 @@ const Topbar = () => {
           <div className="label">Navbar</div>
           <div className="spacer"></div>
           <div className="item">
+          </div>
+          <div className="item">
             <span>
-              <a href="#Home" className="link">
-                HOME
-              </a>
+              <Link to="/" className="link">
+                ABOUT
+              </Link>
             </span>
           </div>
           <div className="item">
             <span>
-              <a href="#About" className="link">
-                About
-              </a>
-            </span>
-          </div>
-          <div className="item">
-            <span>
-              <a href="#Projects2" className="link">
+              <Link to="/projects" className="link">
                 PROJECTS
-              </a>
+              </Link>
             </span>
           </div>
           <div className="item">
             <span>
-              <a href="#Contact" className="link">
+              <Link to="/contact" className="link">
                 CONTACT
-              </a>
+              </Link>
             </span>
           </div>
         </div>
@@ -66,24 +62,19 @@ const Topbar = () => {
           <span></span>
           <ul id="menu">
             <li>
-              <a href="#Home" className="link" onClick={timeout}>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#About" className="link" onClick={timeout}>
+              <Link to="/" className="link" onClick={timeout}>
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#Projects" className="link" onClick={timeout}>
+              <Link to="/projects" className="link" onClick={timeout}>
                Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#Contact" className="link" onClick={timeout}>
+              <Link to="/contact" className="link" onClick={timeout}>
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
