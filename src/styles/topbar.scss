@@ -237,7 +237,6 @@ ul {
 .nav-menu {
   height: 45px;
   width: 60px;
-  background-color: rgba(128, 128, 128, 0.315);
   z-index: 2;
   position: fixed;
   top: 0;
@@ -300,12 +299,12 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 7px;
-  width: 85%;
+  width: 55%;
   box-shadow: 0 0 10px rgb(56, 56, 56);
   height: 100%;
   margin: -50px 0 0 -50px;
   padding: 50px;
-  background-color: rgba(56, 56, 56, 0.989);
+  background-color: rgb(40, 40, 43);
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
