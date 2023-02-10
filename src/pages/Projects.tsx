@@ -34,7 +34,7 @@ const Projects = () => {
                         <div className="card-info-wrapper">
                             <div className="card-info-title">
                                 <div className="card-info-title">
-                                    <h3>Categorize-CLI</h3>
+                                    <h2>Categorize-CLI</h2>
                                     <h4>A command-line-tool made to help you categorize/organize files in a given directory</h4>
                                 </div>
                             </div></div>

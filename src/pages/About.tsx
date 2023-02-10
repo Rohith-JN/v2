@@ -59,13 +59,13 @@ const About = () => {
         </div>
         <div className="para">
           <p>
-            Hi, I am Rohith, I am a <span>self taught junior developer</span> located in India passionate about{' '}
-            <span>software</span> and <span>automation</span>.
+            Hi, I am Rohith, I am a self-taught junior developer located in India passionate about{' '}
+            software and automation.
           </p>
           <br></br>
           <p>
             I like to build interactive and minimal websites using frameworks like{' '}
-            <span>React.js</span>, and building backend tools with {' '} languages like <span>Python</span> and <span>Rust</span>
+            React.js, and backend tools with {' '} languages like Python and Rust
           </p>
           <br></br>
         </div>

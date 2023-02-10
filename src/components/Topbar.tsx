@@ -1,6 +1,5 @@
 import '../styles/topbar.scss';
 import { useRef } from 'react';
-import { Outlet, Link } from "react-router-dom";
 
 const Topbar = () => {
   const checkboxes: any = useRef()
@@ -33,23 +32,23 @@ const Topbar = () => {
           </div>
           <div className="item">
             <span>
-              <Link to="/" className="link">
-                ABOUT
-              </Link>
+              <a href="#About" className="link">
+                01.ABOUT
+              </a>
             </span>
           </div>
           <div className="item">
             <span>
-              <Link to="/projects" className="link">
-                PROJECTS
-              </Link>
+              <a href="#Projects" className="link">
+                02.PROJECTS
+              </a>
             </span>
           </div>
           <div className="item">
             <span>
-              <Link to="/contact" className="link">
-                CONTACT
-              </Link>
+              <a href="#Contact" className="link">
+                03.CONTACT
+              </a>
             </span>
           </div>
         </div>
@@ -57,24 +56,24 @@ const Topbar = () => {
       <div className="nav-menu">
         <div id="menuToggle">
           <input type="checkbox" className="checkbox" ref = {checkboxes}/>
-          <span></span>
-          <span></span>
-          <span></span>
+          <span id="one"></span>
+          <span id="two"></span>
+          <span id="three"></span>
           <ul id="menu">
             <li>
-              <Link to="/" className="link" onClick={timeout}>
+              <a href="#About" className="link" onClick={timeout}>
                 About
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/projects" className="link" onClick={timeout}>
+              <a href="#Projects" className="link" onClick={timeout}>
                Projects
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/contact" className="link" onClick={timeout}>
+              <a href="#Contact" className="link" onClick={timeout}>
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

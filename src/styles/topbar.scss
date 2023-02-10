@@ -237,7 +237,7 @@ ul {
 .nav-menu {
   height: 45px;
   width: 60px;
-  z-index: 2;
+  z-index: 100;
   position: fixed;
   top: 0;
 }
@@ -255,7 +255,6 @@ ul {
 
 #menuToggle span {
   display: flex;
-  width: 29px;
   height: 2px;
   margin-bottom: 5px;
   position: relative;
@@ -266,6 +265,15 @@ ul {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
     opacity 0.55s ease;
+}
+#menuToggle span#one {
+    width: 29px;
+}
+#menuToggle span#two {
+    width: 20px;
+}
+#menuToggle span#three {
+    width: 11px;
 }
 
 #menuToggle span:first-child {

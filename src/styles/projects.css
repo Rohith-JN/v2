@@ -7,7 +7,7 @@
     align-items: center;
     background-color: var(--bg-color);
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
     margin: 0px;
     padding: 0px;
@@ -82,17 +82,16 @@
     position: absolute;
     z-index: 2;
   }
-  
   h1, h2, h3, h4, span {
     color: rgb(240, 240, 240);
-    font-family: Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-family: Inter-regular;
     font-weight: 300;
     margin: 0px;
   }
   .card-column {
       display: flex;
-      justify-content: stat;
-      align-items: start;
+      justify-content: center;
+      align-items: center;
       flex-direction: column;
       gap: 2px;
   }
@@ -103,22 +102,6 @@
     justify-content: flex-start;
     padding: 0px 20px;
   }
-  
-  .card-info {
-    display: flex;
-    gap: 10px;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-  
-  .card-info > i {  
-    font-size: 1em;
-    height: 20px;
-    line-height: 20px;
-  }
-  
   .card-info-title > h3 {
     font-size: 1.1em;
     line-height: 20px;
@@ -126,10 +109,10 @@
   
   .card-info-title > h4 {
     color: rgba(255, 255, 255, 0.5);
-    font-size: 0.85em;
-    margin-top: 8px;
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 22px;
   }
-  
   /* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
   
   @media(max-width: 1000px) {
@@ -152,35 +135,31 @@
   @media(max-width: 500px) {
     .card {
       height: 180px;
+      width: 100%;
     }
-    
-    .card-image {
-      height: 80px;  
+    #cards {
+     margin-top: 50px;
+     margin-bottom: 50px;
     }
-    
-    .card-image > i {
-      font-size: 3em;
-    }
-      
     .card-info-wrapper {
       padding: 0px 10px;
     }
-    
     .card-info > i { 
       font-size: 0.8em; 
     }
-    
     .card-info-title > h3 {
       font-size: 0.9em;
     }
-  
     .card-info-title > h4 {
       font-size: 0.8em;
       margin-top: 4px;
     }
   }
-  
-  @media(max-width: 320px) {
+  @media(max-width: 430px) {
+    #cards {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     .card {
       width: 100%;
     }
