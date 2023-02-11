@@ -9,7 +9,6 @@ import {
     NotificationManager,
 } from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
-import Socials from '../components/Socials';
 
 AOS.init();
 
@@ -116,7 +115,6 @@ const Contact = () => {
             <div className="bottom">
                 <h3>Designed & built by <a href="https://github.com/Rohith-JN">Rohith JN</a></h3>
             </div>
-            <Socials />
         </div>
     );
 }

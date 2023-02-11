@@ -15,3 +15,7 @@
 body {
     background-color: rgb(20, 20, 20);
 }
+::selection {
+  color: black;
+  background: white;
+}
