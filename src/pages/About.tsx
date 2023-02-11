@@ -22,7 +22,7 @@ const About = () => {
       'Next.js',
       'Firebase',
       'XD',
-      'Arch Linux',
+      'Linux',
       'JSON',
       'git',
       'Nvim',
@@ -59,15 +59,10 @@ const About = () => {
         </div>
         <div className="para">
           <p>
-            I am a high school student located in India, passionate about{' '}
-            <span>UI designing</span>,{' '}
-            <span>web development</span> and <span>automation</span>.
+            Hi, I'm a driven and passionate junior developer with over 2 years of experience in developing web and mobile applications.
           </p>
           <br></br>
-          <p>
-            I like to build interactive and minimal websites using{' '}
-            <span>React.js</span>, When I am not building something for the web, I
-            automate using <span>Python</span>
+          <p>My expertise lies in using technologies such as <span>React</span>, <span>Python</span>, and <span>Flutter</span> to create seamless and user-friendly experiences. I have a strong desire to continuously improve and learn new skills. When I'm not coding, you can find me exploring new technologies and experimenting with different programming languages.
           </p>
           <br></br>
         </div>

@@ -1,12 +1,13 @@
 :root {
     --color: white;
 }
-
+.Contact-container {
+    position: relative;
+    min-height: 100vh;
+}
 .Contact {
     scroll-snap-align: start;
-    height: 100vh;
-    max-height: 100vh;
-    max-width: 100%;
+    padding-top: 2%;
     .main {
         display: flex;
         flex-direction: row;
@@ -21,8 +22,8 @@
     .section-header {
         text-align: center;
         margin: 0 auto;
-        padding: 40px 0;
-        font: 300 45px;
+        padding-top: 40px;
+        font: 45px;
         font-family: sans-serif;
         color: #fff;
         text-transform: uppercase;
@@ -33,7 +34,9 @@
         display: flex;
         justify-content: center;
         width: 650px;
+        position: relative;
         max-width: 100%;
+        padding-top: 30px;
 
         form {
             width: 100%;
@@ -49,10 +52,9 @@
             flex-direction: row;
 
             input {
+                height: 50px;
                 width: 100%;
                 max-width: 100%;
-                height: 50px;
-                box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
             }
         }
 
@@ -61,9 +63,8 @@
             padding-right: 15px;
             font-family: sans-serif;
             font-size: 17px;
-            margin-top: 15px;
-            background-color: #2d2c2c;
-            border: none;
+            margin-top: 10px;
+            background-color: rgb(23, 23, 23);
             color: rgb(201, 195, 195);
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
@@ -71,15 +72,16 @@
             width: 100%;
             max-width: 100%;
             height: 50px;
-            box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+            border: 1px solid rgb(255, 255,255, 0.1);
+            border-radius: 3px;
         }
 
         textarea {
             padding-left: 15px;
             padding-right: 15px;
             font-family: sans-serif;
-            margin-top: 15px;
-            background-color: #2d2c2c;
+            margin-top: 10px;
+            background-color: rgb(23, 23, 23);
             border: none;
             font-size: 17px;
             padding-top: 10px;
@@ -90,68 +92,74 @@
             max-width: 100%;
             resize: none;
             box-sizing: border-box;
-            box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+            border: 1px solid rgb(255, 255,255, 0.1);
+            border-radius: 3px;
         }
 
         textarea:focus,
         input:focus {
             outline: none;
-            border-bottom: 2px solid #58d8e4;
-
         }
     }
+}
 
-    .form-button {
-        width: 100%;
-        display: flex;
-        justify-content: end;
+.form-button {
+    width: 100%;
+    display: flex;
+    justify-content: end;
 
-        button.slide:hover,
-        button.slide:focus {
-            box-shadow: inset 10.5em 0 0 0 #{adjust-hue(white, 45deg)};
-        }
+    button.slide:hover,
+    button.slide:focus {
+        box-shadow: inset 10.5em 0 0 0 #{adjust-hue(white, 45deg)};
+    }
 
-        button {
-            cursor: pointer;
-            color: white;
-            transition: 0.5s;
-            height: 50px;
-            width: 130px;
-            margin-top: 20px;
-            font-size: 15px;
-            background: none;
-            font-family: sans-serif;
-            border: 2px solid white;
+    button {
+        cursor: pointer;
+        color: white;
+        transition: 0.5s;
+        height: 50px;
+        width: 130px;
+        margin-top: 20px;
+        font-size: 15px;
+        background: none;
+        font-family: sans-serif;
+        border: 2px solid white;
+        border-radius: 3px;   
 
-            &:hover,
-            &:focus {
-                border-color: var(--color);
-                color: black;
-            }
+        &:hover,
+        &:focus {
+            border-color: var(--color);
+            color: black;
         }
     }
+}
+.bottom {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+        font-size: 15px;
+    }
+}
+a {
+    color: white;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 650px) {
-    .Contact {
-        .contact-form {
-            .row-1 {
-                flex-direction: column;
-                gap: 0px;
+    .Contact-container {
+        .Contact {
+            .contact-form {
+                .row-1 {
+                    flex-direction: column;
+                    gap: 0px;
+                }
             }
         }
     }
 }
 
-@media screen and (max-width: 401px) {
-    .Contact {
-        padding-top: 20px;
-        .row-1 {
-            input {
-                width: 110%;
-                max-width: 110%;
-                height: 50px;
-            }
-        }
-    }
-}
+

@@ -12,7 +12,7 @@ const Topbar = () => {
     }, 600);
   };
 
-  function check(checked:boolean = true) {
+  function check(checked: boolean = true) {
     checkboxes.forEach((checkbox: { checked: boolean; }) => {
       checkbox.checked = checked;
     });
@@ -29,30 +29,32 @@ const Topbar = () => {
           <div className="label">Navbar</div>
           <div className="spacer"></div>
           <div className="item">
+          </div>
+          <div className="item">
             <span>
               <a href="#Home" className="link">
-                HOME
+                01.HOME
               </a>
             </span>
           </div>
           <div className="item">
             <span>
               <a href="#About" className="link">
-                About
+                02.ABOUT
               </a>
             </span>
           </div>
           <div className="item">
             <span>
               <a href="#Projects" className="link">
-                PROJECTS & TOOLS
+                03.PROJECTS
               </a>
             </span>
           </div>
           <div className="item">
             <span>
               <a href="#Contact" className="link">
-                CONTACT
+                04.CONTACT
               </a>
             </span>
           </div>
@@ -60,7 +62,7 @@ const Topbar = () => {
       </div>
       <div className="nav-menu">
         <div id="menuToggle">
-          <input type="checkbox" className="checkbox" ref = {checkboxes}/>
+          <input type="checkbox" className="checkbox" ref={checkboxes} />
           <span></span>
           <span></span>
           <span></span>
@@ -77,7 +79,7 @@ const Topbar = () => {
             </li>
             <li>
               <a href="#Projects" className="link" onClick={timeout}>
-               Projects & Tools
+                Projects
               </a>
             </li>
             <li>
