@@ -59,7 +59,7 @@ const About = () => {
         </div>
         <div className="para">
           <p>
-            Hi, I'm a driven and passionate junior developer with over 2 years of experience in developing web and mobile applications. My interest in software development started back in 2018 when a custom personal assistant caught my eye and I decided to build one on my own.
+            Hi, I'm a driven and passionate junior developer with over 2 years of experience in developing web and mobile applications.
           </p>
           <br></br>
           <p>My expertise lies in using technologies such as <span>React</span>, <span>Python</span>, and <span>Flutter</span> to create seamless and user-friendly experiences. I have a strong desire to continuously improve and learn new skills. When I'm not coding, you can find me exploring new technologies and experimenting with different programming languages.

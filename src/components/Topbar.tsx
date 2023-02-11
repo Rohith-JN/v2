@@ -63,9 +63,9 @@ const Topbar = () => {
       <div className="nav-menu">
         <div id="menuToggle">
           <input type="checkbox" className="checkbox" ref={checkboxes} />
-          <span id="one"></span>
-          <span id="two"></span>
-          <span id="three"></span>
+          <span></span>
+          <span></span>
+          <span></span>
           <ul id="menu">
             <li>
               <a href="#Home" className="link" onClick={timeout}>

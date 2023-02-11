@@ -1,6 +1,9 @@
 .About {
     scroll-snap-align: start;
     max-width: 100%;
+    min-height: 100vh;
+    padding-right: 12px;
+    padding-left: 12px;
     display: flex;
     flex-direction: row;
     background-color: rgb(20, 20, 20);
@@ -12,11 +15,7 @@
         flex-direction: column;
         gap: 40px;
         justify-content: center;
-        padding-left: 100px;
-
-        .heading {
-            width: 150px;
-        }
+        padding-left: 80px;
 
         .heading h1 {
             font-size: 45px;
@@ -24,7 +23,6 @@
             color: #fff;
             text-transform: uppercase;
             letter-spacing: 6px;
-            direction: ltr;
             user-select: none;
         }
 
@@ -157,16 +155,16 @@
     }
 }
 
-@media  screen and (max-width: 323px) {
+@media  screen and (max-width: 380px) {
     .About {
-        padding-top: 40px;
+        padding-top: 50px;
         padding-bottom: 20px;
     }
 }
-
-@media screen and (max-width: 218px) {
+@media  screen and (max-width: 330px) {
     .About {
         padding-top: 70px;
+        padding-bottom: 20px;
     }
 }
 

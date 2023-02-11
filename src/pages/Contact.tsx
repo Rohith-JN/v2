@@ -16,7 +16,6 @@ const Contact = () => {
     const form: any = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-
         emailjs
             .sendForm(
                 process.env.REACT_APP_SERVICE_ID ? process.env.REACT_APP_SERVICE_ID : '',
@@ -44,19 +43,19 @@ const Contact = () => {
     return (
         <div className="Contact-container" id="Contact">
             <div className="Contact">
-                <h1 className="section-header">Contact</h1>
+                <h1 className="section-header" data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="900"
+                    data-aos-easing="ease"
+                    data-aos-mirror="false"
+                    data-aos-once="true">Contact</h1>
                 <div className="main">
                     <div className="contact-form">
                         <form
                             role="form"
                             onSubmit={sendEmail}
-                            data-aos="fade-up"
-                            data-aos-offset="200"
-                            data-aos-delay="50"
-                            data-aos-duration="900"
-                            data-aos-easing="ease"
-                            data-aos-mirror="false"
-                            data-aos-once="true"
+                            ref={form}
                         >
                             <div className="row-1">
                                 <input
@@ -67,6 +66,13 @@ const Contact = () => {
                                     placeholder="Name"
                                     spellCheck="false"
                                     required
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-delay="100"
+                                    data-aos-duration="900"
+                                    data-aos-easing="ease"
+                                    data-aos-mirror="false"
+                                    data-aos-once="true"
                                 ></input>
 
                                 <input
@@ -77,6 +83,13 @@ const Contact = () => {
                                     placeholder="Email"
                                     spellCheck="false"
                                     required
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-delay="100"
+                                    data-aos-duration="900"
+                                    data-aos-easing="ease"
+                                    data-aos-mirror="false"
+                                    data-aos-once="true"
                                 ></input>
                             </div>
 
@@ -87,6 +100,13 @@ const Contact = () => {
                                 name="subject"
                                 placeholder="Subject"
                                 spellCheck="false"
+                                data-aos="fade-up"
+                                data-aos-offset="200"
+                                data-aos-delay="200"
+                                data-aos-duration="900"
+                                data-aos-easing="ease"
+                                data-aos-mirror="false"
+                                data-aos-once="true"
                             ></input>
                             <br></br>
 
@@ -96,18 +116,27 @@ const Contact = () => {
                                 name="message"
                                 placeholder="Message"
                                 spellCheck="false"
+                                data-aos="fade-up"
+                                data-aos-offset="200"
+                                data-aos-delay="300"
+                                data-aos-duration="900"
+                                data-aos-easing="ease"
+                                data-aos-mirror="false"
+                                data-aos-once="true"
                             ></textarea>
                             <br></br>
+                            <div className="form-button" data-aos="fade-up"
+                                data-aos-offset="200"
+                                data-aos-delay="400"
+                                data-aos-duration="900"
+                                data-aos-easing="ease"
+                                data-aos-mirror="false"
+                                data-aos-once="true">
+                                <button type="submit" value="Submit" className="slide">
+                                    Send Message!
+                                </button>
+                            </div>
                         </form>
-                        <button
-                            data-aos="fade-up"
-                            data-aos-offset="200"
-                            data-aos-delay="50"
-                            data-aos-duration="900"
-                            data-aos-easing="ease"
-                            data-aos-mirror="false"
-                            data-aos-once="true"
-                            className="btn" type="submit" value="Submit"><img src="https://i.cloudup.com/gBzAn-oW_S-2000x2000.png" width="64px" height="64px" id="plane" /></button>
                     </div>
                 </div>
                 <NotificationContainer />

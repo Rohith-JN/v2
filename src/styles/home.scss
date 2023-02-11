@@ -11,9 +11,9 @@
 
     .Container {
         display: flex;
-    padding-left: 8%;
-
+        padding-left: 7%;
         gap: 20px;
+        padding-right: 12%;
         flex-direction: column;
     }
     .header {
@@ -68,6 +68,68 @@
             &:focus {
                 border-color: var(--color);
                 color: black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Home {
+        .Container {
+            display: flex;
+            padding-left: 6%;
+            gap: 20px;
+            padding-right: 10%;
+            flex-direction: column;
+        }
+        .title {
+            h1 {
+                font-size: 40px;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 430px) {
+    .Home {
+        .Container {
+            display: flex;
+            padding-left: 6%;
+            gap: 20px;
+            padding-right: 10%;
+            flex-direction: column;
+        }
+        .title {
+            h1 {
+                font-size: 35px;
+            }
+        }
+        .footer {
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .Home {
+
+        .Container {
+            display: flex;
+            padding-left: 4%;
+            gap: 20px;
+            padding-right: 0.5%;
+            flex-direction: column;
+        }
+        .title {
+            h1 {
+                font-size: 27px;
+            }
+        }
+        .footer {
+            p {
+                font-size: 17px;
             }
         }
     }

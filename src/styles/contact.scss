@@ -2,14 +2,12 @@
     --color: white;
 }
 .Contact-container {
-    display: flex;
     position: relative;
-    justify-content: center;
     min-height: 100vh;
 }
 .Contact {
     scroll-snap-align: start;
-    padding-top: 1.5%;
+    padding-top: 2%;
     .main {
         display: flex;
         flex-direction: row;
@@ -24,8 +22,8 @@
     .section-header {
         text-align: center;
         margin: 0 auto;
-        padding: 40px 0;
-        font: 300 45px;
+        padding-top: 40px;
+        font: 45px;
         font-family: sans-serif;
         color: #fff;
         text-transform: uppercase;
@@ -38,6 +36,7 @@
         width: 650px;
         position: relative;
         max-width: 100%;
+        padding-top: 30px;
 
         form {
             width: 100%;
@@ -53,9 +52,9 @@
             flex-direction: row;
 
             input {
+                height: 50px;
                 width: 100%;
                 max-width: 100%;
-                height: 50px;
             }
         }
 
@@ -104,18 +103,43 @@
     }
 }
 
-button.btn {
-    border-radius: 20px;
-    background-color: transparent;
-    cursor: pointer;
-    border: 0px solid transparent;
-    position: absolute;
-    bottom: 10px;
-    right: 15px;
+.form-button {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+    button.slide:hover,
+    button.slide:focus {
+        box-shadow: inset 10.5em 0 0 0 #{adjust-hue(white, 45deg)};
+    }
+
+    button {
+        cursor: pointer;
+        color: white;
+        transition: 0.5s;
+        height: 50px;
+        width: 130px;
+        margin-top: 20px;
+        font-size: 15px;
+        background: none;
+        font-family: sans-serif;
+        border: 2px solid white;
+        border-radius: 3px;   
+
+        &:hover,
+        &:focus {
+            border-color: var(--color);
+            color: black;
+        }
+    }
 }
 .bottom {
-position: absolute;
-bottom: 20px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     h3 {
         font-size: 15px;
     }
@@ -124,26 +148,18 @@ a {
     color: white;
     text-decoration: underline;
 }
+
 @media screen and (max-width: 650px) {
-    .Contact {
-        .contact-form {
-            .row-1 {
-                flex-direction: column;
-                gap: 0px;
+    .Contact-container {
+        .Contact {
+            .contact-form {
+                .row-1 {
+                    flex-direction: column;
+                    gap: 0px;
+                }
             }
         }
     }
 }
 
-@media screen and (max-width: 401px) {
-    .Contact {
-        padding-top: 20px;
-        .row-1 {
-            input {
-                width: 110%;
-                max-width: 110%;
-                height: 50px;
-            }
-        }
-    }
-}
+

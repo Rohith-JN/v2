@@ -126,10 +126,12 @@
       padding: 10px 0px;
     }
     
-    .card {
-      flex-shrink: 1;
-      width: calc(50% - 4px);
-    }
+    
+      .card {
+        flex-shrink: 1;
+        width: calc(50% - 4px);
+      }
+    
   }
   
   @media(max-width: 500px) {
