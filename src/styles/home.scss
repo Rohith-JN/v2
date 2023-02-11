@@ -1,0 +1,74 @@
+.Home {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url('../assets/background.svg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .Container {
+        display: flex;
+    padding-left: 8%;
+
+        gap: 20px;
+        flex-direction: column;
+    }
+    .header {
+        h4 {
+            font-size: 16px;
+            font-family: Inter-Regular;
+            color: rgb(171, 166, 166);
+            letter-spacing: 0.5px;
+        }
+    }
+    .title {
+        h1 {
+            font-size: 55px;
+            font-family: Inter-Bold;
+            letter-spacing: 2px;
+        }
+        h1.secondary {
+            opacity: 0.5;
+        }
+    }
+    .footer {
+        max-width: 700px;
+        p {
+            font-size: 18px;
+            color: rgb(171, 166, 166);
+            padding-top: 12px;
+            font-family: Inter-Regular;
+            line-height: 30px;
+        }
+    }
+    .footer-btn {
+        width: 100%;
+
+        button.slide:hover,
+        button.slide:focus {
+            box-shadow: inset 10.5em 0 0 0 #{adjust-hue(white, 45deg)};
+        }
+
+        button {
+            cursor: pointer;
+            color: white;
+            transition: 0.5s;
+            height: 50px;
+            width: 130px;
+            margin-top: 20px;
+            font-size: 15px;
+            background: none;
+            font-family: sans-serif;
+            border: 2px solid white;
+
+            &:hover,
+            &:focus {
+                border-color: var(--color);
+                color: black;
+            }
+        }
+    }
+}

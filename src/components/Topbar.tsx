@@ -12,7 +12,7 @@ const Topbar = () => {
     }, 600);
   };
 
-  function check(checked:boolean = true) {
+  function check(checked: boolean = true) {
     checkboxes.forEach((checkbox: { checked: boolean; }) => {
       checkbox.checked = checked;
     });
@@ -32,22 +32,29 @@ const Topbar = () => {
           </div>
           <div className="item">
             <span>
+              <a href="#Home" className="link">
+                01.HOME
+              </a>
+            </span>
+          </div>
+          <div className="item">
+            <span>
               <a href="#About" className="link">
-                01.ABOUT
+                02.ABOUT
               </a>
             </span>
           </div>
           <div className="item">
             <span>
               <a href="#Projects" className="link">
-                02.PROJECTS
+                03.PROJECTS
               </a>
             </span>
           </div>
           <div className="item">
             <span>
               <a href="#Contact" className="link">
-                03.CONTACT
+                04.CONTACT
               </a>
             </span>
           </div>
@@ -55,11 +62,16 @@ const Topbar = () => {
       </div>
       <div className="nav-menu">
         <div id="menuToggle">
-          <input type="checkbox" className="checkbox" ref = {checkboxes}/>
+          <input type="checkbox" className="checkbox" ref={checkboxes} />
           <span id="one"></span>
           <span id="two"></span>
           <span id="three"></span>
           <ul id="menu">
+            <li>
+              <a href="#Home" className="link" onClick={timeout}>
+                Home
+              </a>
+            </li>
             <li>
               <a href="#About" className="link" onClick={timeout}>
                 About
@@ -67,7 +79,7 @@ const Topbar = () => {
             </li>
             <li>
               <a href="#Projects" className="link" onClick={timeout}>
-               Projects
+                Projects
               </a>
             </li>
             <li>
