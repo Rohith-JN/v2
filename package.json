@@ -1,5 +1,4 @@
 {
-  "homepage": "https://Rohith-JN.github.io",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -26,8 +25,6 @@
     "web-vitals": "^3.0.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -57,7 +54,6 @@
     "@types/aos": "^3.0.4",
     "@types/react-document-meta": "^3.0.2",
     "@types/three": "0.146.0",
-    "gh-pages": "^4.0.0",
     "react-router-dom": "^6.8.0",
     "sass": "^1.56.2",
     "TagCloud": "^2.2.0",
