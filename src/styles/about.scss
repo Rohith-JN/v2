@@ -175,3 +175,14 @@
         }
     }
 }
+
+@media screen and (max-width: 280px) {
+    .About {
+        padding-top: 170px;
+        .left {
+            .para p {
+                font-size: 17px;
+            }
+        }
+    }
+}

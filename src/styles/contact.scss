@@ -163,3 +163,14 @@ a {
 }
 
 
+@media screen and (max-width: 280px) {
+    .Contact-container {
+        .Contact {
+            .contact-form {
+                textarea {
+                    height: 140px;
+                }
+            }
+        }
+    }
+}

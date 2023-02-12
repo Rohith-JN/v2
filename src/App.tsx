@@ -2,7 +2,7 @@ import Topbar from './components/Topbar';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import About from './pages/About';
-import './App.scss';
+import './app.scss';
 import Projects from './pages/Projects';
 
 export default function App() {

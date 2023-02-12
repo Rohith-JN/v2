@@ -63,6 +63,7 @@
             background: none;
             font-family: sans-serif;
             border: 2px solid white;
+            border-radius: 3px;
 
             &:hover,
             &:focus {
@@ -130,6 +131,27 @@
         .footer {
             p {
                 font-size: 17px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .Home {
+
+        .Container {
+            gap: 9px;
+            padding-right: 0.5%;
+            flex-direction: column;
+        }
+        .title {
+            h1 {
+                font-size: 23px;
+            }
+        }
+        .footer {
+            p {
+                font-size: 14px;
             }
         }
     }
