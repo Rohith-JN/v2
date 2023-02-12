@@ -146,7 +146,7 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className="card" data-aos="fade-up" onClick={event => window.location.href = "https://github.com/Rohith-JN/rohith-jn.github.io"}
+                <div className="card" data-aos="fade-up" onClick={event => window.location.href = "https://github.com/Rohith-JN/v2"}
                     data-aos-offset="200"
                     data-aos-delay="350"
                     data-aos-duration="900"
