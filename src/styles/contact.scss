@@ -37,6 +37,8 @@
         position: relative;
         max-width: 100%;
         padding-top: 30px;
+        padding-bottom: 2%;
+
 
         form {
             width: 100%;
@@ -162,8 +164,7 @@ a {
     }
 }
 
-
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 380px) {
     .Contact-container {
         .Contact {
             .contact-form {

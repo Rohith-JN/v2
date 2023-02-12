@@ -112,16 +112,12 @@
         }
     }
 }
-
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 380px) {
     .Home {
 
         .Container {
-            display: flex;
-            padding-left: 4%;
-            gap: 20px;
+            gap: 9px;
             padding-right: 0.5%;
-            flex-direction: column;
         }
         .title {
             h1 {
@@ -141,8 +137,6 @@
 
         .Container {
             gap: 9px;
-            padding-right: 0.5%;
-            flex-direction: column;
         }
         .title {
             h1 {

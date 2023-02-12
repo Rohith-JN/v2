@@ -159,6 +159,13 @@
     .About {
         padding-top: 50px;
         padding-bottom: 20px;
+        .left {
+            .para p {
+                font-style: normal;
+                letter-spacing: 0px;
+                line-height: 33px;
+            }
+        }
     }
 }
 @media  screen and (max-width: 330px) {
