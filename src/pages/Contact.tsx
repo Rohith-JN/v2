@@ -24,13 +24,13 @@ const Contact = () => {
                 process.env.REACT_APP_USER_ID ? process.env.REACT_APP_USER_ID : ''
             )
             .then(
-                (result) => {
+                (_) => {
                     NotificationManager.success(
                         'Thank you for contacting me',
                         'Message sent!'
                     );
                 },
-                (error) => {
+                (_) => {
                     NotificationManager.error(
                         'Please try again later',
                         'Message could not be sent!'
@@ -142,7 +142,7 @@ const Contact = () => {
                 <NotificationContainer />
             </div>
             <div className="bottom">
-                <h3>Designed & built by <a href="https://github.com/Rohith-JN">Rohith JN</a></h3>
+                <h3>Designed & built by <a href="https://github.com/Rohith-JN" target="_blank" rel="noreferrer">Rohith JN</a></h3>
             </div>
         </div>
     );

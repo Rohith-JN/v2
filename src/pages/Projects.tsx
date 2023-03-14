@@ -29,7 +29,7 @@ const Projects = () => {
     return (
         <div className='Projects' id="Projects">
             <div id="cards" ref={containerRef}>
-                <div className="card" data-aos="fade-up" onClick={event => window.location.href = 'https://github.com/Rohith-JN/Categorize-CLI'}
+                <div className="card" data-aos="fade-up" onClick={() => window.open('https://github.com/Rohith-JN/Categorize-CLI', '_blank')}
                     data-aos-offset="200"
                     data-aos-delay="50"
                     data-aos-duration="900"
@@ -52,7 +52,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card" data-aos="fade-up" onClick={event => window.location.href = "https://github.com/Rohith-JN/Friday"}
+                <div className="card" data-aos="fade-up" onClick={() => window.open("https://github.com/Rohith-JN/Friday", '_blank')}
                     data-aos-offset="200"
                     data-aos-delay="150"
                     data-aos-duration="900"
@@ -75,7 +75,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card" data-aos="fade-up" onClick={event => window.location.href = "https://github.com/Rohith-JN/Tasks-Android"}
+                <div className="card" data-aos="fade-up" onClick={() => window.open("https://github.com/Rohith-JN/Tasks-Android")}
                     data-aos-offset="200"
                     data-aos-delay="200"
                     data-aos-duration="900"
@@ -99,7 +99,7 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className="card" data-aos="fade-up" onClick={event => window.location.href = "https://github.com/Rohith-JN/Tasks-iOS"}
+                <div className="card" data-aos="fade-up" onClick={() => window.open("https://github.com/Rohith-JN/Tasks-iOS")}
                     data-aos-offset="200"
                     data-aos-delay="250"
                     data-aos-duration="900"
@@ -122,7 +122,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card" data-aos="fade-up" onClick={event => window.location.href = "https://github.com/Rohith-JN/npm-search"}
+                <div className="card" data-aos="fade-up" onClick={() => window.open("https://github.com/Rohith-JN/npm-search")}
                     data-aos-offset="200"
                     data-aos-delay="300"
                     data-aos-duration="900"
@@ -146,7 +146,7 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className="card" data-aos="fade-up" onClick={event => window.location.href = "https://github.com/Rohith-JN/v2"}
+                <div className="card" data-aos="fade-up" onClick={() => window.open("https://github.com/Rohith-JN/v2")}
                     data-aos-offset="200"
                     data-aos-delay="350"
                     data-aos-duration="900"

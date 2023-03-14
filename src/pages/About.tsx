@@ -12,19 +12,19 @@ const About = () => {
   useEffect(() => {
     const Tags = [
       'Python',
-      'JavaScript',
       'TypeScript',
       'Dart',
       'Tailwind',
-      'SASS',
       'Flutter',
       'React.js',
       'Next.js',
       'Firebase',
       'XD',
-      'Linux',
-      'JSON',
       'git',
+      'Redux',
+      'PostgreSQL',
+      'node.js',
+      'express',
       'Nvim',
       'Lua'
     ];
@@ -59,10 +59,20 @@ const About = () => {
         </div>
         <div className="para">
           <p>
-            Hi, I'm a driven and passionate junior developer with over 2 years of experience in developing web and mobile applications.
+            Hi, I'm a driven and passionate junior developer with over 2 years of experience in developing web applications.
           </p>
           <br></br>
-          <p>My expertise lies in using technologies such as <span>React</span>, <span>Python</span>, and <span>Flutter</span> to create seamless and user-friendly experiences. I have a strong desire to continuously improve and learn new skills. When I'm not coding, you can find me exploring new technologies and experimenting with different programming languages.
+          <p>My expertise lies in using technologies such as <span onClick={() =>
+            window.open(
+              `https://www.google.com/search?q=React.js`,
+              '_blank'
+            )
+          } style={{ cursor: "pointer" }}>React</span>, <span onClick={() =>
+            window.open(
+              `https://www.google.com/search?q=python`,
+              '_blank'
+            )
+          } style={{ cursor: "pointer" }}>Python</span>, to create seamless and user-friendly experiences. I have a strong desire to continuously improve and learn new skills. When I'm not coding, you can find me exploring new technologies and experimenting with different programming languages.
           </p>
           <br></br>
         </div>
