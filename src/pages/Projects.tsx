@@ -52,7 +52,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card" data-aos="fade-up" onClick={() => window.open("https://github.com/Rohith-JN/Friday", '_blank')}
+                <div className="card" data-aos="fade-up" onClick={() => window.open("https://github.com/Rohith-JN/type", '_blank')}
                     data-aos-offset="200"
                     data-aos-delay="150"
                     data-aos-duration="900"
@@ -62,14 +62,19 @@ const Projects = () => {
                     <div className="card-content">
                         <div className="card-info-wrapper">
                             <div className="card-info-title">
-                                <h2>Friday</h2>
-                                <h4>A simple personal assistant to automate Windows made using Python</h4>
+                                <h2>type</h2>
+                                <h4>A minimalistic typing test site to improve your typing skills and track your progress</h4>
                             </div>
                         </div>
                         <div className="card-info-wrapper">
                             <div className="card-info">
                                 <div className="card-info-title">
-                                    <h4>{'<'}Python{'>'}</h4>
+                                    <h4>{'<'}React.js{'>'}{'<'}Next.js{'>'}{'<'}Redux{'>'}{'<'}Firebase{'>'}{'<'}Typescript{'>'}{'<'}Node.js{'>'}
+                                        {'<'}Express.js{'>'}
+                                        {'<'}GraphQL{'>'}
+                                        {'<'}URQL{'>'}
+                                        {'<'}TypeORM{'>'}
+                                        {'<'}PostgreSQL{'>'}{'<'}Docker{'>'}</h4>
                                 </div>
                             </div>
                         </div>
