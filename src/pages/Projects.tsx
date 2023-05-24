@@ -69,12 +69,7 @@ const Projects = () => {
                         <div className="card-info-wrapper">
                             <div className="card-info">
                                 <div className="card-info-title">
-                                    <h4>{'<'}React.js{'>'}{'<'}Next.js{'>'}{'<'}Redux{'>'}{'<'}Firebase{'>'}{'<'}Typescript{'>'}{'<'}Node.js{'>'}
-                                        {'<'}Express.js{'>'}
-                                        {'<'}GraphQL{'>'}
-                                        {'<'}URQL{'>'}
-                                        {'<'}TypeORM{'>'}
-                                        {'<'}PostgreSQL{'>'}{'<'}Docker{'>'}</h4>
+                                    <h4>{'<'}PERN{'>'} {'<'}Firebase{'>'}</h4>
                                 </div>
                             </div>
                         </div>
