@@ -67,14 +67,26 @@ const About = () => {
               `https://www.google.com/search?q=React.js`,
               '_blank'
             )
-          } style={{ cursor: "pointer" }}>React</span>, <span onClick={() =>
-            window.open(
-              `https://www.google.com/search?q=python`,
-              '_blank'
-            )
-          } style={{ cursor: "pointer" }}>Python</span>, to create seamless and user-friendly experiences. I have a strong desire to continuously improve and learn new skills. When I'm not coding, you can find me exploring new technologies and experimenting with different programming languages.
+          } style={{ cursor: "pointer" }}>React</span> to create seamless and user-friendly experiences. I have a strong desire to continuously improve and learn new skills.
           </p>
           <br></br>
+          <p> Currently learning and developing full-stack sites using the <span onClick={() =>
+            window.open(
+              `https://www.google.com/search?q=React.js`,
+              '_blank'
+            )
+          } style={{ cursor: "pointer" }}>PERN</span> stack along with <span onClick={() =>
+            window.open(
+              `https://www.google.com/search?q=React.js`,
+              '_blank'
+            )
+          } style={{ cursor: "pointer" }}>GraphQL</span> or <span onClick={() =>
+            window.open(
+              `https://www.google.com/search?q=React.js`,
+              '_blank'
+            )
+          } style={{ cursor: "pointer" }}>Rest APIs</span>
+          </p>
         </div>
       </div>
       <div className="right">
