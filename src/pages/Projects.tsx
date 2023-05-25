@@ -63,12 +63,12 @@ const Projects = () => {
                         <div className="card-info-wrapper">
                             <div className="card-info-title">
                                 <h2>type</h2>
-                                <h4>A minimalistic typing test site to improve your typing skills and track your progress</h4>
+                                <h4>A typing test site to improve your typing skills and track your progress. Try it out. <br />username: <span>"user"</span>, <br /> email: <span>"user@gmail.com"</span>, <br /> password: <span>"user@gmail.com"</span></h4>
                             </div>
                         </div>
                         <div className="card-info-wrapper">
                             <div className="card-info">
-                                <div className="card-info-title">
+                                <div className="card-info-title" style={{ wordSpacing: "20px" }}>
                                     <h4>{'<'}PERN{'>'} {'<'}Firebase{'>'}</h4>
                                 </div>
                             </div>
