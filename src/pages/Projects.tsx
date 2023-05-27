@@ -63,7 +63,7 @@ const Projects = () => {
                         <div className="card-info-wrapper">
                             <div className="card-info-title">
                                 <h2>type</h2>
-                                <h4>A typing test site to improve your typing skills and track your progress. Try it out. <br />username: <span>"test"</span>, <br /> email: <span>"test@gmail.com"</span>, <br /> password: <span>"test@gmail.com"</span></h4>
+                                <h4>A typing test site to improve your typing skills and track your progress.</h4>
                             </div>
                         </div>
                         <div className="card-info-wrapper">
