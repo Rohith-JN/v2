@@ -24,40 +24,43 @@ const Topbar = () => {
 
   return (
     <div className="nav">
-      <div className="navbar">
-        <div className="menu">
-          <div className="label">Navbar</div>
-          <div className="spacer"></div>
-          <div className="item">
-          </div>
-          <div className="item">
-            <span>
-              <a href="#Home" className="link">
-                01.HOME
-              </a>
-            </span>
-          </div>
-          <div className="item">
-            <span>
-              <a href="#About" className="link">
-                02.ABOUT
-              </a>
-            </span>
-          </div>
-          <div className="item">
-            <span>
-              <a href="#Projects" className="link">
-                03.PROJECTS
-              </a>
-            </span>
-          </div>
-          <div className="item">
-            <span>
-              <a href="#Contact" className="link">
-                04.CONTACT
-              </a>
-            </span>
-          </div>
+      <div className="navbar"
+        data-aos="fade-down"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="900"
+        data-aos-easing="ease"
+        data-aos-mirror="false"
+        data-aos-once="true">
+        <div className="item">
+        </div>
+        <div className="item">
+          <span>
+            <a href="#Home" className="link">
+              {'{'}HOME{'}'}
+            </a>
+          </span>
+        </div>
+        <div className="item">
+          <span>
+            <a href="#About" className="link">
+              {'{'}ABOUT{'}'}
+            </a>
+          </span>
+        </div>
+        <div className="item">
+          <span>
+            <a href="#Projects" className="link">
+              {'{'}PROJECTS{'}'}
+            </a>
+          </span>
+        </div>
+        <div className="item">
+          <span>
+            <a href="#Contact" className="link">
+              {'{'}CONTACT{'}'}
+            </a>
+          </span>
         </div>
       </div>
       <div className="nav-menu">

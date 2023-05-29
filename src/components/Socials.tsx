@@ -3,7 +3,13 @@ import '../styles/socials.scss';
 const Socials = () => {
   return (
     <div className="main-menu">
-      <div className="social-menu">
+      <div className="social-menu" data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="900"
+        data-aos-easing="ease"
+        data-aos-mirror="false"
+        data-aos-once="true">
         <li>
           <a href="https://twitter.com/RohithNambiar4" target="__blank">
             <i className="fa fa-twitter"></i>
