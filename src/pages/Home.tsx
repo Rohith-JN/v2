@@ -14,12 +14,7 @@ const Home = () => {
                     <h1>Rohith J Nambiar</h1>
                     <h1 className='secondary'>Coding The Path To Success</h1>
                 </div>
-                <div className='footer' data-aos="fade-up"
-                    data-aos-offset="200"
-                    data-aos-delay="900"
-                    data-aos-duration="500"
-                    data-aos-mirror="false"
-                    data-aos-once="true">
+                <div className='footer'>
                     <p>I'm a junior developer located in India, currently studying in 12th grade. I build
                         interactive, minimal websites using libraries like <span onClick={() =>
                             window.open(
