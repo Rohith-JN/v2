@@ -41,8 +41,8 @@ const Contact = () => {
     };
 
     return (
-        <div className="Contact-container" id="Contact">
-            <div className="Contact">
+        <div className="contact-container" id="Contact">
+            <div className="contact">
                 <h1 className="section-header" data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
                     data-aos-offset="200"
                     data-aos-delay="50"

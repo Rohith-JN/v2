@@ -6,7 +6,7 @@ AOS.init();
 const Home = () => {
     return (
         <div className='Home' id="Home">
-            <div className='Container'>
+            <div className='home-container'>
                 <div className='header' data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
                     data-aos-offset="200"
                     data-aos-delay="500"

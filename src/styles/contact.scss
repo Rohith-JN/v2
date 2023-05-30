@@ -1,11 +1,11 @@
 :root {
     --color: white;
 }
-.Contact-container {
+.contact-container {
     position: relative;
     min-height: 100vh;
 }
-.Contact {
+.contact {
     scroll-snap-align: start;
     padding-top: 2%;
     .main {
@@ -155,8 +155,8 @@ a {
 }
 
 @media screen and (max-width: 650px) {
-    .Contact-container {
-        .Contact {
+    .contact-container {
+        .contact {
             .contact-form {
                 .row-1 {
                     flex-direction: column;
@@ -168,8 +168,8 @@ a {
 }
 
 @media screen and (max-width: 380px) {
-    .Contact-container {
-        .Contact {
+    .contact-container {
+        .contact {
             .contact-form {
                 textarea {
                     height: 140px;
