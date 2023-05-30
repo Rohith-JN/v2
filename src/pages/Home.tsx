@@ -7,22 +7,10 @@ const Home = () => {
     return (
         <div className='Home' id="Home">
             <div className='Container'>
-                <div className='header' data-aos="fade-up"
-                    data-aos-offset="200"
-                    data-aos-delay="500"
-                    data-aos-duration="500"
-                    data-aos-easing="ease"
-                    data-aos-mirror="false"
-                    data-aos-once="true">
+                <div className='header'>
                     <h4>Hi, my name is</h4>
                 </div>
-                <div className='title' data-aos="fade-up"
-                    data-aos-offset="200"
-                    data-aos-delay="700"
-                    data-aos-duration="500"
-                    data-aos-easing="ease"
-                    data-aos-mirror="false"
-                    data-aos-once="true">
+                <div className='title'>
                     <h1>Rohith J Nambiar</h1>
                     <h1 className='secondary'>Coding The Path To Success</h1>
                 </div>
@@ -51,13 +39,7 @@ const Home = () => {
                         } style={{ cursor: "pointer" }}>full-stack</span> web development.
                     </p>
                 </div>
-                <div className="footer-btn" data-aos="fade-up"
-                    data-aos-offset="200"
-                    data-aos-delay="1100"
-                    data-aos-duration="500"
-                    data-aos-easing="ease"
-                    data-aos-mirror="false"
-                    data-aos-once="true">
+                <div className="footer-btn">
                     <a href='#Contact'><button className="slide">
                         Contact me!
                     </button></a>
