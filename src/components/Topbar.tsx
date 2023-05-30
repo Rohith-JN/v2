@@ -1,97 +1,46 @@
 import '../styles/topbar.scss';
-import { useRef } from 'react';
+import pi from '../assets/pi.jpg';
 
 const Topbar = () => {
-  const checkboxes: any = useRef()
-
-  const timeout = () => {
-    setTimeout(() => {
-      if (window.location.pathname === '/') {
-        uncheckAll();
-      }
-    }, 600);
-  };
-
-  function check(checked: boolean = true) {
-    checkboxes.forEach((checkbox: { checked: boolean; }) => {
-      checkbox.checked = checked;
-    });
-  }
-
-  function uncheckAll() {
-    check(false);
-  }
 
   return (
-    <div className="nav">
-      <div className="navbar"
-        data-aos="fade-down"
-        data-aos-offset="200"
+    <div className="navbar">
+      <div className="left" data-aos="fade-down"
+        data-aos-offset="150"
         data-aos-delay="50"
-        data-aos-duration="900"
+        data-aos-duration="500"
         data-aos-easing="ease"
         data-aos-mirror="false"
         data-aos-once="true">
-        <div className="item">
-        </div>
-        <div className="item">
-          <span>
-            <a href="#Home" className="link">
-              {'{'}HOME{'}'}
-            </a>
-          </span>
-        </div>
-        <div className="item">
-          <span>
-            <a href="#About" className="link">
-              {'{'}ABOUT{'}'}
-            </a>
-          </span>
-        </div>
-        <div className="item">
-          <span>
-            <a href="#Projects" className="link">
-              {'{'}PROJECTS{'}'}
-            </a>
-          </span>
-        </div>
-        <div className="item">
-          <span>
-            <a href="#Contact" className="link">
-              {'{'}CONTACT{'}'}
-            </a>
-          </span>
-        </div>
+        <img src={pi} width={40} style={{ borderRadius: "30px", border: "2px solid white" }}></img>
       </div>
-      <div className="nav-menu">
-        <div id="menuToggle">
-          <input type="checkbox" className="checkbox" ref={checkboxes} />
-          <span></span>
-          <span></span>
-          <span></span>
-          <ul id="menu">
+      <div className="right" data-aos="fade-down"
+        data-aos-offset="150"
+        data-aos-delay="50"
+        data-aos-duration="500"
+        data-aos-easing="ease"
+        data-aos-mirror="false"
+        data-aos-once="true">
+        <nav>
+          <ul>
+            <li><a href="#Home">
+              HOME
+            </a></li>
+            <li><a href="#About">
+              ABOUT
+            </a></li>
             <li>
-              <a href="#Home" className="link" onClick={timeout}>
-                Home
+              <a href="#Projects">
+                PROJECTS
               </a>
             </li>
             <li>
-              <a href="#About" className="link" onClick={timeout}>
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#Projects" className="link" onClick={timeout}>
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#Contact" className="link" onClick={timeout}>
-                Contact
+              <a href="#Contact">
+                CONTACT
               </a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </div>
   );

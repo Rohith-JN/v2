@@ -5,4 +5,5 @@
   &::-webkit-scrollbar {
       display: none;
   }
+    scroll-snap-type: y mandatory;
 }

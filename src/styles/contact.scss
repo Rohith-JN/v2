@@ -4,6 +4,7 @@
 .Contact-container {
     position: relative;
     min-height: 100vh;
+    scroll-snap-align: start;
 }
 .Contact {
     scroll-snap-align: start;

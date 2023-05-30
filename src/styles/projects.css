@@ -11,6 +11,7 @@
     justify-content: center;
     margin: 0px;
     padding: 0px;
+    scroll-snap-align: start;
   }
 
   #cards {

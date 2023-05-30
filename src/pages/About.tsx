@@ -19,14 +19,15 @@ const About = () => {
       'React.js',
       'Next.js',
       'Firebase',
-      'XD',
       'git',
       'Redux',
       'PostgreSQL',
-      'node.js',
-      'express',
-      'Nvim',
-      'Lua'
+      'Node.js',
+      'Express.js',
+      'TypeORM',
+      'GraphQL',
+      'Docker',
+      'URQL'
     ];
 
     if (IsTagCloudLoaded.current) return;
@@ -49,7 +50,7 @@ const About = () => {
         data-aos="fade-right"
         data-aos-offset="200"
         data-aos-delay="50"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease"
         data-aos-mirror="false"
         data-aos-once="true"
@@ -59,7 +60,7 @@ const About = () => {
         </div>
         <div className="para">
           <p>
-            Hi, I'm a driven and passionate junior developer with over 2 years of experience in developing web applications.
+            I'm a driven and passionate software developer with over 2 years of experience in developing web applications.
           </p>
           <br></br>
           <p>My expertise lies in using technologies such as <span onClick={() =>
@@ -92,12 +93,6 @@ const About = () => {
       <div className="right">
         <span
           className="content"
-          onClick={(e: any) =>
-            window.open(
-              `https://www.google.com/search?q=${e.target.innerText}`,
-              '_blank'
-            )
-          }
         ></span>
       </div>
     </div>

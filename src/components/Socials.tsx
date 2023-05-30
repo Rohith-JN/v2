@@ -6,7 +6,7 @@ const Socials = () => {
       <div className="social-menu" data-aos="fade-left"
         data-aos-offset="200"
         data-aos-delay="50"
-        data-aos-duration="900"
+        data-aos-duration="500"
         data-aos-easing="ease"
         data-aos-mirror="false"
         data-aos-once="true">
