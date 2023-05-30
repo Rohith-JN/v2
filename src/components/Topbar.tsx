@@ -26,9 +26,6 @@ const Topbar = () => {
             <li><a href="#Home">
               HOME
             </a></li>
-            <li><a href="#About">
-              ABOUT
-            </a></li>
             <li>
               <a href="#Projects">
                 PROJECTS

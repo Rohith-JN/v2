@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 
 const Card = ({ project, title, description, stack, delay }: { project: string, title: string, description: string, stack: string, delay: string }) => {
     return (
-        <div className="card" data-aos="fade-up" onClick={() => window.open(`https://github.com/Rohith-JN/${project}`, '_blank')}
+        <div className="card" data-aos={(window.innerWidth > 500) ? "fade-up" : ""} onClick={() => window.open(`https://github.com/Rohith-JN/${project}`, '_blank')}
             data-aos-offset="200"
             data-aos-delay={delay}
             data-aos-duration="900"

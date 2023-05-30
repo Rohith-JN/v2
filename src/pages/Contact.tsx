@@ -43,7 +43,13 @@ const Contact = () => {
     return (
         <div className="Contact-container" id="Contact">
             <div className="Contact">
-                <h1 className="section-header">Contact</h1>
+                <h1 className="section-header" data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="900"
+                    data-aos-easing="ease"
+                    data-aos-mirror="false"
+                    data-aos-once="true">Contact</h1>
                 <div className="main">
                     <div className="contact-form">
                         <form
@@ -60,7 +66,13 @@ const Contact = () => {
                                     placeholder="Name"
                                     spellCheck="false"
                                     required
-
+                                    data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                                    data-aos-offset="200"
+                                    data-aos-delay="100"
+                                    data-aos-duration="900"
+                                    data-aos-easing="ease"
+                                    data-aos-mirror="false"
+                                    data-aos-once="true"
                                 ></input>
 
                                 <input
@@ -71,7 +83,13 @@ const Contact = () => {
                                     placeholder="Email"
                                     spellCheck="false"
                                     required
-
+                                    data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                                    data-aos-offset="200"
+                                    data-aos-delay="100"
+                                    data-aos-duration="900"
+                                    data-aos-easing="ease"
+                                    data-aos-mirror="false"
+                                    data-aos-once="true"
                                 ></input>
                             </div>
 
@@ -82,7 +100,13 @@ const Contact = () => {
                                 name="subject"
                                 placeholder="Subject"
                                 spellCheck="false"
-
+                                data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                                data-aos-offset="200"
+                                data-aos-delay="200"
+                                data-aos-duration="900"
+                                data-aos-easing="ease"
+                                data-aos-mirror="false"
+                                data-aos-once="true"
                             ></input>
                             <br></br>
 
@@ -92,10 +116,22 @@ const Contact = () => {
                                 name="message"
                                 placeholder="Message"
                                 spellCheck="false"
-
+                                data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                                data-aos-offset="200"
+                                data-aos-delay="300"
+                                data-aos-duration="900"
+                                data-aos-easing="ease"
+                                data-aos-mirror="false"
+                                data-aos-once="true"
                             ></textarea>
                             <br></br>
-                            <div className="form-button">
+                            <div className="form-button" data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                                data-aos-offset="200"
+                                data-aos-delay="400"
+                                data-aos-duration="900"
+                                data-aos-easing="ease"
+                                data-aos-mirror="false"
+                                data-aos-once="true">
                                 <button type="submit" value="Submit" className="slide">
                                     Send Message!
                                 </button>

@@ -7,15 +7,32 @@ const Home = () => {
     return (
         <div className='Home' id="Home">
             <div className='Container'>
-                <div className='header'>
+                <div className='header' data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                    data-aos-offset="200"
+                    data-aos-delay="500"
+                    data-aos-duration="500"
+                    data-aos-easing="ease"
+                    data-aos-mirror="false"
+                    data-aos-once="true">
                     <h4>Hi, my name is</h4>
                 </div>
-                <div className='title'>
+                <div className='title' data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                    data-aos-offset="200"
+                    data-aos-delay="700"
+                    data-aos-duration="500"
+                    data-aos-easing="ease"
+                    data-aos-mirror="false"
+                    data-aos-once="true">
                     <h1>Rohith J Nambiar</h1>
                     <h1 className='secondary'>Coding The Path To Success</h1>
                 </div>
-                <div className='footer'>
-                    <p>I'm a junior developer located in India, currently studying in 12th grade. I build
+                <div className='footer' data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                    data-aos-offset="200"
+                    data-aos-delay="900"
+                    data-aos-duration="500"
+                    data-aos-mirror="false"
+                    data-aos-once="true">
+                    <p>I'm a software developer located in India. I build
                         interactive, minimal websites using libraries like <span onClick={() =>
                             window.open(
                                 `https://www.google.com/search?q=React.js`,
@@ -34,10 +51,19 @@ const Home = () => {
                         } style={{ cursor: "pointer" }}>full-stack</span> web development.
                     </p>
                 </div>
-                <div className="footer-btn">
-                    <a href='#Contact'><button className="slide">
-                        Contact me!
-                    </button></a>
+                <div className="footer-btn" data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                    data-aos-offset="200"
+                    data-aos-delay="1100"
+                    data-aos-duration="500"
+                    data-aos-easing="ease"
+                    data-aos-mirror="false"
+                    data-aos-once="true">
+                    <button className="slide" onClick={() => window.open(
+                        `https://github.com/Rohith-JN`,
+                        '_blank'
+                    )}>
+                        Github
+                    </button>
                 </div>
             </div>
             <Socials />
