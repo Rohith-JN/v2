@@ -23,7 +23,7 @@ const Home = () => {
                     data-aos-easing="ease"
                     data-aos-mirror="false"
                     data-aos-once="true">
-                    <h1>Rohith J Nambiar</h1>
+                    <h1>Rohith Nambiar</h1>
                     <h1 className='secondary'>Coding The Path To Success</h1>
                 </div>
                 <div className='footer' data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
