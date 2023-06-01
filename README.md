@@ -9,5 +9,6 @@
   <a href="https://github.com/Rohith-JN/v1" target="_blank">v1</a>,
 </p>
 
-![demo](https://user-images.githubusercontent.com/78314165/218301333-65dc1917-6592-4c02-b060-6594def33587.png)
+![Screenshot (222)](https://github.com/Rohith-JN/v2/assets/78314165/21ad6e85-1be5-4e01-b8b0-01a8fed8cd71)
+
 
