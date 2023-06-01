@@ -3,9 +3,8 @@
     --card-color: rgb(23, 23, 23);
   }
 
-  .Projects {
+  .projects {
     align-items: center;
-    background-color: var(--bg-color);
     display: flex;
     min-height: 100vh;
     justify-content: center;

@@ -5,4 +5,12 @@
   &::-webkit-scrollbar {
       display: none;
   }
+  .app {
+    background-image: url('assets/background.svg');
+    background-color: rgba(18, 18, 18);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

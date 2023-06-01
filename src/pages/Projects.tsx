@@ -55,7 +55,7 @@ const Projects = () => {
     }, []);
 
     return (
-        <div className='Projects' id="Projects">
+        <div className='projects' id="Projects">
             <div id="cards" ref={containerRef}>
                 <Card project={'Categorize-CLI'} title={'Categorize-CLI'} description={'A command-line-tool made to help you categorize/organize files in a given directory'} stack={'Python PyPi'} delay={'50'} />
                 <Card project={'type-frontend'} title={'type'} description={'A typing test site to improve your typing skills and track your progress.'} stack={'PERN Firebase'} delay={'150'} />
