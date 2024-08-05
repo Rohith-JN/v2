@@ -32,7 +32,7 @@ const Home = () => {
                     data-aos-duration="500"
                     data-aos-mirror="false"
                     data-aos-once="true">
-                    <p>I'm a software developer located in India. I build
+                    <p>I'm a First-Year BTech IT Student at VIT Vellore. I build
                         interactive, minimal websites using libraries like <span onClick={() =>
                             window.open(
                                 `https://www.google.com/search?q=React.js`,
@@ -60,7 +60,7 @@ const Home = () => {
                     data-aos-once="true">
                     <button className="slide" onClick={() => window.open(
                         `https://github.com/Rohith-JN`,
-                        '_blank'
+                        "__blank"
                     )}>
                         Github
                     </button>

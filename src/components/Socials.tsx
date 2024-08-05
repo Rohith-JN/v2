@@ -11,11 +11,6 @@ const Socials = () => {
         data-aos-mirror="false"
         data-aos-once="true">
         <li>
-          <a href="https://twitter.com/RohithNambiar4" target="__blank">
-            <i className="fa fa-twitter"></i>
-          </a>
-        </li>
-        <li>
           <a href="https://github.com/Rohith-JN" target="__blank">
             <i className="fa fa-github"></i>
           </a>
