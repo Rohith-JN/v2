@@ -18,10 +18,10 @@ const Contact = () => {
         e.preventDefault();
         emailjs
             .sendForm(
-                process.env.SERVICE_ID ? process.env.SERVICE_ID : '',
-                process.env.TEMPLATE_ID ? process.env.TEMPLATE_ID : '',
+                process.env.REACT_APP_SERVICE_ID ? process.env.REACT_APP_SERVICE_ID : '',
+                process.env.REACT_APP_TEMPLATE_ID ? process.env.REACT_APP_TEMPLATE_ID : '',
                 form.current,
-                process.env.USER_ID ? process.env.USER_ID : ''
+                process.env.REACT_APP_USER_ID ? process.env.REACT_APP_USER_ID : ''
             )
             .then(
                 (_) => {
