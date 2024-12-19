@@ -4,19 +4,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
 const Home = () => {
+    var fadeUp = (window.innerWidth > 500) ? "fade-up" : ""
     return (
         <div className='Home' id="Home">
             <div className='home-container'>
-                <div className='header' data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
-                    data-aos-offset="200"
-                    data-aos-delay="500"
-                    data-aos-duration="500"
-                    data-aos-easing="ease"
-                    data-aos-mirror="false"
-                    data-aos-once="true">
+                <div className='header' >
                     <h4>Hi, my name is</h4>
                 </div>
-                <div className='title' data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                <div className='title' data-aos={fadeUp}
                     data-aos-offset="200"
                     data-aos-delay="700"
                     data-aos-duration="500"
@@ -24,9 +19,8 @@ const Home = () => {
                     data-aos-mirror="false"
                     data-aos-once="true">
                     <h1>Rohith Nambiar</h1>
-                    <h1 className='secondary'>Coding The Path To Success</h1>
                 </div>
-                <div className='footer' data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                <div className='footer' data-aos={fadeUp}
                     data-aos-offset="200"
                     data-aos-delay="900"
                     data-aos-duration="500"
@@ -51,7 +45,7 @@ const Home = () => {
                         } style={{ cursor: "pointer" }}>full-stack</span> web development.
                     </p>
                 </div>
-                <div className="footer-btn" data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                <div className="footer-btn" data-aos={fadeUp}
                     data-aos-offset="200"
                     data-aos-delay="1100"
                     data-aos-duration="500"

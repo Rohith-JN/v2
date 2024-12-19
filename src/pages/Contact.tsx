@@ -13,6 +13,7 @@ import 'react-notifications/lib/notifications.css';
 AOS.init();
 
 const Contact = () => {
+    var fadeUp = (window.innerWidth > 500) ? "fade-up" : ""
     const form: any = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
@@ -43,7 +44,7 @@ const Contact = () => {
     return (
         <div className="contact-container" id="Contact">
             <div className="contact">
-                <h1 className="section-header" data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                <h1 className="section-header" data-aos={fadeUp}
                     data-aos-offset="200"
                     data-aos-delay="50"
                     data-aos-duration="900"
@@ -66,7 +67,7 @@ const Contact = () => {
                                     placeholder="Name"
                                     spellCheck="false"
                                     required
-                                    data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                                    data-aos={fadeUp}
                                     data-aos-offset="200"
                                     data-aos-delay="100"
                                     data-aos-duration="900"
@@ -83,7 +84,7 @@ const Contact = () => {
                                     placeholder="Email"
                                     spellCheck="false"
                                     required
-                                    data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                                    data-aos={fadeUp}
                                     data-aos-offset="200"
                                     data-aos-delay="100"
                                     data-aos-duration="900"
@@ -100,7 +101,7 @@ const Contact = () => {
                                 name="subject"
                                 placeholder="Subject"
                                 spellCheck="false"
-                                data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                                data-aos={fadeUp}
                                 data-aos-offset="200"
                                 data-aos-delay="200"
                                 data-aos-duration="900"
@@ -116,7 +117,7 @@ const Contact = () => {
                                 name="message"
                                 placeholder="Message"
                                 spellCheck="false"
-                                data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                                data-aos={fadeUp}
                                 data-aos-offset="200"
                                 data-aos-delay="300"
                                 data-aos-duration="900"
@@ -125,7 +126,7 @@ const Contact = () => {
                                 data-aos-once="true"
                             ></textarea>
                             <br></br>
-                            <div className="form-button" data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+                            <div className="form-button" data-aos={fadeUp}
                                 data-aos-offset="200"
                                 data-aos-delay="400"
                                 data-aos-duration="900"
