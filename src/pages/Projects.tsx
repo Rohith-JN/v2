@@ -1,15 +1,31 @@
 import '../styles/projects.css';
 import { useEffect, useRef } from 'react';
 
-const Card = ({ project, title, description, stack, delay }: { project: string, title: string, description: string, stack: string, delay: string }) => {
+const Card = ({
+    title,
+    description,
+    stack,
+    delay,
+    link
+}: {
+    title: string,
+    description: string,
+    stack: string,
+    delay: string,
+    link: string
+}) => {
     return (
-        <div className="card" data-aos={(window.innerWidth > 500) ? "fade-up" : ""} onClick={() => window.open(`https://github.com/Rohith-JN/${project}`, '_blank')}
+        <div
+            className="card"
+            data-aos={(window.innerWidth > 500) ? "fade-up" : ""}
+            onClick={() => window.open(link, '_blank')}
             data-aos-offset="200"
             data-aos-delay={delay}
             data-aos-duration="900"
             data-aos-easing="ease"
             data-aos-mirror="false"
-            data-aos-once="true">
+            data-aos-once="true"
+        >
             <div className="card-content">
                 <div className="card-info-wrapper">
                     <div className="card-info-title">
@@ -27,7 +43,8 @@ const Card = ({ project, title, description, stack, delay }: { project: string, 
             </div>
         </div>
     );
-}
+};
+
 
 const Projects = () => {
     const containerRef: any = useRef(null);
@@ -57,12 +74,13 @@ const Projects = () => {
     return (
         <div className='projects' id="Projects">
             <div id="cards" ref={containerRef}>
-                <Card project={'Categorize-CLI'} title={'Categorize-CLI'} description={'A command-line-tool made to help you categorize/organize files in a given directory'} stack={'Python PyPi'} delay={'50'} />
-                <Card project={'type-frontend'} title={'type'} description={'A typing test site to improve your typing skills and track your progress.'} stack={'PERN Firebase'} delay={'150'} />
-                <Card project={'Tasks-Android'} title={'Tasks-Android'} description={'A minimal todo app made using Flutter for Android'} stack={'Flutter Firebase'} delay={'200'} />
-                <Card project={'Tasks-iOS'} title={'Tasks-iOS'} description={'A minimal todo app made using Flutter for iOS'} stack={'Flutter Firebase'} delay={'250'} />
-                <Card project={'npm-search'} title={'npm-search'} description={'A site to view and compare npm-package stats'} stack={'Next.js Tailwind'} delay={'300'} />
-                <Card project={'v2'} title={'Portfolio-Site'} description={'Since this felt like a project I put a lot of effort in, I decided to put it here!'} stack={'React.js TypeScript'} delay={'300'} />
+                <Card title={'Numagix (Internship)'} description={'Built an internal dashboard for developers to track payments, analytics, logs, etc.'} stack={'Next.js Postgres Azure'} delay={'50'} link={"https://numagix.in"} />
+
+                <Card title={'Categorize-CLI'} description={'A command-line-tool made to help you categorize/organize files in a given directory'} stack={'Python PyPi'} delay={'150'} link={"https://github.com/Rohith-JN/Categorize-CLI"} />
+                <Card title={'type'} description={'A typing test site to improve your typing skills and track your progress.'} stack={'PERN Firebase'} delay={'200'} link={"https://typeio.vercel.app/"} />
+                <Card title={'FFCS-inator'} description={'Contributed to a platform that helps VIT students easily plan and manage their FFCS timetables.'} stack={'Next.js MongoDB'} delay={'250'} link={"https://ffcs.codechefvit.com/"} />
+                <Card title={'Tasks'} description={'A minimal todo app made using Flutter for iOS and Android'} stack={'Flutter Firebase'} delay={'300'} link={"https://github.com/Rohith-JN/Tasks-Android"} />
+                <Card title={'Portfolio-Site'} description={'Since this felt like a project I put a lot of effort in, I decided to put it here!'} stack={'React.js TypeScript'} delay={'350'} link={"/"} />
             </div>
         </div>
     )
