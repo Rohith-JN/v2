@@ -26,7 +26,10 @@ const Home = () => {
                     data-aos-duration="500"
                     data-aos-mirror="false"
                     data-aos-once="true">
-                    <p>I'm a BTech IT Student at VIT Vellore. I build
+                    <p>I'm a BTech IT Student at <span onClick={() => window.open(
+                        `https://www.google.com/search?q=VIT Vellore`,
+                        '_blank'
+                    )} style={{ cursor: "pointer" }}>VIT Vellore</span>. I build
                         interactive, minimal websites using libraries like <span onClick={() =>
                             window.open(
                                 `https://www.google.com/search?q=React.js`,
